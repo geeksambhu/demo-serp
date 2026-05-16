@@ -59,7 +59,7 @@ packaging==26.2
     #   streamlit
 pandas==3.0.3
     # via
-    #   jetpot (pyproject.toml)
+    #   vibetrip (pyproject.toml)
     #   streamlit
 pillow==12.2.0
     # via streamlit
@@ -72,7 +72,7 @@ pydeck==0.9.2
 python-dateutil==2.9.0.post0
     # via pandas
 python-dotenv==1.2.2
-    # via jetpot (pyproject.toml)
+    # via vibetrip (pyproject.toml)
 python-multipart==0.0.28
     # via streamlit
 referencing==0.37.0
@@ -88,7 +88,7 @@ rpds-py==0.30.0
     #   jsonschema
     #   referencing
 serpapi==1.0.2
-    # via jetpot (pyproject.toml)
+    # via vibetrip (pyproject.toml)
 six==1.17.0
     # via python-dateutil
 smmap==5.0.3
@@ -96,7 +96,7 @@ smmap==5.0.3
 starlette==1.0.0
     # via streamlit
 streamlit==1.57.0
-    # via jetpot (pyproject.toml)
+    # via vibetrip (pyproject.toml)
 tenacity==9.1.4
     # via streamlit
 toml==0.10.2

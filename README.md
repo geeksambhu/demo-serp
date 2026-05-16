@@ -1,8 +1,8 @@
-# Jetpot
+# VibeTrip
 
-## What is Jetpot?
+## What is VibeTrip?
 
-Jetpot is a Streamlit travel planner for quick trip research. Enter an origin airport, a budget, and either a destination or an explore-style search, then review real SerpApi-powered flight ideas or complete trip bundles ranked for value.
+VibeTrip is a Streamlit travel planner for quick trip research. Enter an origin airport, a budget, and either a destination or an explore-style search, then review real SerpApi-powered flight ideas or complete trip bundles ranked for value.
 
 This is built for a SerpApi PyCon raffle challenge and tuned for a short live demo:
 
@@ -17,6 +17,7 @@ SerpApi provides structured access to public flight, hotel, and destination data
 ## Features
 
 - Search from an origin airport with a specific destination or an explore mode
+- Keep the planner at the top of the page instead of hiding controls in a sidebar
 - Pull live flight data from SerpApi using `google_flights` or `google_travel_explore`
 - Rank results by price, duration, stops, and budget-aware deal quality
 - Highlight best value, cheapest, and fastest options

@@ -24,16 +24,20 @@ CACHE_DIR.mkdir(exist_ok=True)
 TRIP_CACHE_DIR.mkdir(exist_ok=True)
 
 
-def get_api_key() -> str | None:
-    if env_value := os.getenv("SERPAPI_KEY"):
+def get_secret_value(name: str) -> str | None:
+    if env_value := os.getenv(name):
         return env_value
 
     try:
-        secret_value = st.secrets.get("SERPAPI_KEY")
+        secret_value = st.secrets.get(name)
     except Exception:
         secret_value = None
 
     return secret_value
+
+
+def get_api_key() -> str | None:
+    return get_secret_value("SERPAPI_KEY")
 
 
 def load_demo_presets() -> list[dict[str, Any]]:
@@ -85,11 +89,23 @@ def apply_trip_prompt(prompt: dict[str, Any]) -> None:
     departure_offset = int(prompt.get("departure_offset_days", 21))
     trip_length = int(prompt.get("trip_length_days", 3))
     departure_date, return_date = resolve_preset_dates(prompt)
+    destination_code = canonical_destination_code(
+        str(prompt.get("destination", "")),
+        str(prompt.get("destination_name", "")),
+        str(prompt.get("hotel_query", "")),
+    )
+    destination_name = canonical_destination_name(
+        destination_code,
+        str(prompt.get("destination_name", "")),
+    )
+    hotel_query = str(prompt.get("hotel_query", "")).strip()
+    if not hotel_query or destination_name.lower() not in hotel_query.lower():
+        hotel_query = f"{destination_name} hotels"
     st.session_state["origin_input"] = prompt.get("origin", "DFW")
     st.session_state["trip_mode_input"] = "Specific destination"
-    st.session_state["destination_input"] = prompt.get("destination", "")
-    st.session_state["destination_name_input"] = prompt.get("destination_name", prompt.get("destination", ""))
-    st.session_state["hotel_query_input"] = prompt.get("hotel_query", "")
+    st.session_state["destination_input"] = destination_code
+    st.session_state["destination_name_input"] = destination_name
+    st.session_state["hotel_query_input"] = hotel_query
     st.session_state["depart_in_days_input"] = departure_offset
     st.session_state["trip_length_days_input"] = trip_length
     st.session_state["departure_input"] = departure_date
@@ -283,18 +299,54 @@ def airport_label(code: str) -> str:
     return AIRPORT_LABELS.get(normalized, normalized)
 
 
+CITY_TO_AIRPORT = {
+    re.sub(r"[^a-z0-9]+", " ", name.lower()).strip(): code
+    for code, name in AIRPORT_LABELS.items()
+}
+
+
+def normalize_place_name(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", value.lower()).strip()
+
+
+def canonical_destination_code(destination_code: str, destination_name: str, hotel_query: str = "") -> str:
+    normalized_code = normalize_airport_code(destination_code)
+    for candidate in (destination_name, hotel_query.replace("hotels", "").strip()):
+        normalized_candidate = normalize_place_name(candidate)
+        if normalized_candidate in CITY_TO_AIRPORT:
+            return CITY_TO_AIRPORT[normalized_candidate]
+    return normalized_code
+
+
+def canonical_destination_name(destination_code: str, destination_name: str) -> str:
+    normalized_code = normalize_airport_code(destination_code)
+    airport_name = airport_label(normalized_code) if normalized_code else ""
+    cleaned_name = destination_name.strip()
+    if not cleaned_name:
+        return airport_name
+    if airport_name and normalize_place_name(cleaned_name) == normalize_place_name(airport_name):
+        return airport_name
+    return cleaned_name
+
+
 def apply_demo_cache_payload(payload: dict[str, Any]) -> None:
     search_params = payload.get("search_params", {})
     trip_mode = str(payload.get("trip_mode", "Specific destination"))
     origin = str(search_params.get("departure_id", "")).upper()
-    destination = str(search_params.get("arrival_id", "")).upper()
+    destination = canonical_destination_code(
+        str(search_params.get("arrival_id", "")).upper(),
+        str(search_params.get("destination_name", "")),
+    )
     outbound_raw = search_params.get("outbound_date")
     return_raw = search_params.get("return_date")
 
     st.session_state["origin_input"] = origin
     st.session_state["trip_mode_input"] = trip_mode
     st.session_state["destination_input"] = destination
-    derived_destination_name = airport_label(destination) if destination else st.session_state.get("destination_name_input", "")
+    derived_destination_name = canonical_destination_name(
+        destination,
+        str(search_params.get("destination_name", "")) or airport_label(destination),
+    )
     st.session_state["destination_name_input"] = derived_destination_name
     if destination:
         st.session_state["hotel_query_input"] = f"{derived_destination_name} hotels"
@@ -313,13 +365,22 @@ def apply_trip_cache_payload(payload: dict[str, Any]) -> None:
     prompt = payload.get("prompt", {})
     if not isinstance(prompt, dict):
         return
-    destination_name = str(prompt.get("destination_name", "")).strip() or airport_label(str(prompt.get("destination", "")))
+    destination_code = canonical_destination_code(
+        str(prompt.get("destination", "")),
+        str(prompt.get("destination_name", "")),
+        str(prompt.get("hotel_query", "")),
+    )
+    destination_name = canonical_destination_name(
+        destination_code,
+        str(prompt.get("destination_name", "")),
+    )
     hotel_query = str(prompt.get("hotel_query", "")).strip()
     if not hotel_query or destination_name.lower() not in hotel_query.lower():
         hotel_query = f"{destination_name} hotels"
 
     normalized_prompt = {
         **prompt,
+        "destination": destination_code,
         "destination_name": destination_name,
         "hotel_query": hotel_query,
     }
@@ -867,6 +928,19 @@ def render_sight_card(sight: dict[str, Any], index: int) -> None:
     )
 
 
+def render_section_heading(title: str, caption: str = "") -> None:
+    caption_html = f'<p class="section-caption">{caption}</p>' if caption else ""
+    st.markdown(
+        f"""
+        <div class="section-heading-wrap">
+            <div class="section-heading">{title}</div>
+            {caption_html}
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 @st.dialog("Flight Options", width="large")
 def flight_options_dialog() -> None:
     payload = st.session_state.get("modal_payload", {})
@@ -997,9 +1071,9 @@ def render_trip_bundle(prompt: dict[str, Any], bundle: dict[str, Any], budget: f
         alternative_flights.append(flight)
     comparison_rows = [selected_flight] + alternative_flights[:4] if selected_flight else alternative_flights[:5]
 
-    st.subheader("Trip Summary")
-    st.caption(prompt["phrase"])
+    render_section_heading("Trip Summary", prompt["phrase"])
 
+    render_section_heading("Flight Results", "Ranked by value, then price and duration.")
     metric_1, metric_2, metric_3, metric_4 = st.columns(4)
     metric_1.metric("Flight", selected_flight["price_display"] if selected_flight else "N/A")
     metric_2.metric("Hotel", best_hotel["total_price_display"] if best_hotel else "N/A")
@@ -1060,7 +1134,7 @@ def render_trip_bundle(prompt: dict[str, Any], bundle: dict[str, Any], budget: f
             st.write(prompt["phrase"])
             st.json(bundle)
 
-    st.markdown("**Flight picks**")
+    render_section_heading("Flight Picks", "Best overall, cheapest, and fastest options from the selected trip bundle.")
     flight_highlight_col1, flight_highlight_col2, flight_highlight_col3 = st.columns(3)
     with flight_highlight_col1:
         render_highlight_card("Best Flight", "🧠", selected_flight)
@@ -1071,14 +1145,14 @@ def render_trip_bundle(prompt: dict[str, Any], bundle: dict[str, Any], budget: f
 
     plan_options = [
         {
-            "label": "Option 1: Smart Save",
+            "label": "Option 1: Budget Smart",
             "summary": "Cheapest practical combo with sightseeing picks for a lower total.",
             "flight": cheapest_flight or selected_flight,
             "hotel": cheapest_hotel or best_hotel,
             "sights": parsed_sights[:3],
         },
         {
-            "label": "Option 2: Best Balance",
+            "label": "Option 2: Smoothest Plan",
             "summary": "Best-value flight plus the strongest hotel fit for the trip budget.",
             "flight": selected_flight,
             "hotel": best_hotel or cheapest_hotel,
@@ -1121,6 +1195,7 @@ def render_trip_bundle(prompt: dict[str, Any], bundle: dict[str, Any], budget: f
                     with col:
                         render_sight_card(sight, selected_option_sights.index(sight) + 1)
 
+    render_section_heading("Quick Previews", "A fast look at the lead hotel and a standout thing to do.")
     preview_col1, preview_col2 = st.columns(2)
     with preview_col1:
         if top_hotels:
@@ -1130,6 +1205,131 @@ def render_trip_bundle(prompt: dict[str, Any], bundle: dict[str, Any], budget: f
         if parsed_sights:
             st.markdown("**Sightseeing preview**")
             render_sight_card(parsed_sights[0], 1)
+
+
+def render_complete_trip_results(
+    prompt: dict[str, Any],
+    bundle: dict[str, Any],
+    trip_bundle_source: str,
+    trip_cache_name: str,
+    show_debug: bool,
+) -> None:
+    render_trip_bundle(prompt, bundle, float(prompt.get("budget", 1000)))
+    with st.expander("Trip Bundle Details", expanded=False):
+        st.write(f"Trip bundle source: {trip_bundle_source}")
+        st.write(f"Trip cache file: `trip_cache/{trip_cache_name}`")
+    if show_debug:
+        with st.expander("🔎 Source Data"):
+            st.json(bundle)
+
+
+def render_flight_search_results(
+    raw_response: dict[str, Any],
+    origin: str,
+    trip_mode: str,
+    max_budget: float,
+    search_phrase: str,
+    response_source: str,
+    matching_cache_name: str,
+    show_debug: bool,
+    cache_meta: dict[str, Any] | None = None,
+) -> None:
+    if raw_response.get("error"):
+        st.error(f"SerpApi error: {raw_response['error']}")
+        st.stop()
+
+    effective_trip_mode = trip_mode
+    if cache_meta and cache_meta.get("trip_mode"):
+        effective_trip_mode = str(cache_meta["trip_mode"])
+
+    if effective_trip_mode == "Specific destination":
+        parsed_results = parse_google_flights_response(raw_response, max_budget)
+    else:
+        parsed_results = parse_google_travel_explore_response(raw_response, origin, max_budget)
+
+    if not parsed_results:
+        st.warning("No flight options were returned for this search. Try changing dates, destination, or trip mode.")
+        if show_debug:
+            with st.expander("🔎 Source Data"):
+                st.json(raw_response)
+        st.stop()
+
+    actionable_results = [result for result in parsed_results if result.get("is_actionable")]
+    incomplete_results = [result for result in parsed_results if not result.get("is_actionable")]
+    display_results = actionable_results if actionable_results else parsed_results
+
+    ranked_results = rank_results(display_results)
+    top_results = ranked_results[:5]
+    cheapest = pick_cheapest(display_results)
+    fastest = pick_fastest(display_results)
+    best_value = pick_best_value(display_results)
+
+    summary_df = pd.DataFrame(ranked_results)
+
+    render_section_heading("Flight Results", "Ranked by value, then price and duration.")
+    metric_1, metric_2, metric_3, metric_4 = st.columns(4)
+    metric_1.metric("Cheapest", cheapest["price_display"] if cheapest else "N/A")
+    metric_2.metric("Best deal score", best_value["deal_score"] if best_value else "N/A")
+    metric_3.metric("Fastest", fastest["duration_display"] if fastest else "N/A")
+    metric_4.metric("Options found", len(display_results))
+
+    if incomplete_results:
+        st.info(
+            f"Omitted {len(incomplete_results)} destination ideas from ranking because SerpApi did not return complete fare details for them."
+        )
+
+    highlight_col1, highlight_col2, highlight_col3 = st.columns(3)
+    with highlight_col1:
+        render_highlight_card("Best Value", "🧠", best_value)
+    with highlight_col2:
+        render_highlight_card("Cheapest", "💸", cheapest)
+    with highlight_col3:
+        render_highlight_card("Fastest", "⚡", fastest)
+
+    render_section_heading("Top Flight Options", "The strongest candidates for this search.")
+    for index, result in enumerate(top_results, start=1):
+        render_ranked_card(result, index)
+
+    render_section_heading("Comparison Table", "A compact side-by-side view of the ranked results.")
+    display_columns = [
+        "departure_airport",
+        "arrival_airport",
+        "price_display",
+        "duration_display",
+        "stops_display",
+        "airline",
+        "deal_score",
+    ]
+    comparison_df = summary_df[display_columns].rename(
+        columns={
+            "departure_airport": "From",
+            "arrival_airport": "To",
+            "price_display": "Price",
+            "duration_display": "Duration",
+            "stops_display": "Stops",
+            "airline": "Airline",
+            "deal_score": "Deal Score",
+        }
+    )
+    st.dataframe(comparison_df, use_container_width=True, hide_index=True)
+
+    st.markdown(
+        '<p class="disclaimer">This app summarizes public flight search data. It does not sell tickets. Verify before booking.</p>',
+        unsafe_allow_html=True,
+    )
+
+    with st.expander("Demo Cache Details", expanded=False):
+        st.write(f"Search phrase: {search_phrase}")
+        st.write(f"Response source: {response_source}")
+        if response_source == "cache" and cache_meta:
+            st.write(f"Captured at: {cache_meta.get('captured_at', 'unknown')}")
+            st.write(f"Cache file: {cache_meta.get('search_params', {})}")
+        else:
+            st.write(f"Suggested cache file: `demo_cache/{matching_cache_name}`")
+
+    if show_debug:
+        with st.expander("🔎 Source Data"):
+            st.json(raw_response)
 
 
 def main() -> None:
@@ -1148,48 +1348,120 @@ def main() -> None:
         for entry in trip_cache_entries
     }
 
-    st.set_page_config(page_title="Jetpot", page_icon="🧳", layout="wide")
+    st.set_page_config(page_title="VibeTrip", page_icon="🧳", layout="wide")
 
     st.markdown(
         """
         <style>
+            .block-container {
+                padding-top: 1.6rem;
+                padding-bottom: 2.5rem;
+                max-width: 1200px;
+            }
             .stApp, .stMarkdown, .stTextInput label, .stNumberInput label, .stSelectbox label, .stRadio label, .stCaption {
                 font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
             }
             .stApp {
                 background:
-                    radial-gradient(circle at top left, rgba(34, 139, 230, 0.12), transparent 20%),
-                    radial-gradient(circle at top right, rgba(255, 201, 107, 0.18), transparent 18%),
-                    linear-gradient(180deg, #f6fbff 0%, #eef5fb 55%, #f8fbfd 100%);
+                    radial-gradient(circle at top left, rgba(61, 133, 198, 0.08), transparent 18%),
+                    radial-gradient(circle at top right, rgba(247, 189, 83, 0.12), transparent 16%),
+                    linear-gradient(180deg, #f7fafc 0%, #eef4f7 58%, #f8fbfc 100%);
                 color: #17324a;
             }
             .hero {
-                padding: 1.35rem 1.5rem;
-                border-radius: 22px;
-                background: linear-gradient(135deg, #0f4c81, #2d7cbf 52%, #ffd27a 150%);
+                padding: 1.5rem 1.6rem;
+                border-radius: 26px;
+                background: linear-gradient(140deg, #12344d 0%, #1f5f87 48%, #f5c56a 160%);
                 color: #ffffff;
-                margin-bottom: 1rem;
+                margin-bottom: 0.9rem;
                 border: 1px solid rgba(255, 255, 255, 0.16);
-                box-shadow: 0 18px 40px rgba(15, 76, 129, 0.16);
+                box-shadow: 0 22px 48px rgba(18, 52, 77, 0.16);
+            }
+            .hero-kicker {
+                font-size: 0.76rem;
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
+                font-weight: 700;
+                color: rgba(255, 255, 255, 0.72);
+                margin-bottom: 0.45rem;
             }
             .hero h1 {
                 margin: 0;
-                font-size: 2.05rem;
-                letter-spacing: 0.02em;
+                font-size: 2.35rem;
+                letter-spacing: 0.01em;
             }
             .hero p {
                 margin: 0.45rem 0 0;
-                font-size: 0.98rem;
-                max-width: 52rem;
+                font-size: 1rem;
+                max-width: 44rem;
                 color: rgba(255, 255, 255, 0.92);
             }
+            .hero-meta {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.55rem;
+                margin-top: 0.95rem;
+            }
+            .hero-pill {
+                display: inline-flex;
+                align-items: center;
+                border-radius: 999px;
+                padding: 0.36rem 0.72rem;
+                background: rgba(255, 255, 255, 0.12);
+                border: 1px solid rgba(255, 255, 255, 0.14);
+                color: rgba(255, 255, 255, 0.92);
+                font-size: 0.82rem;
+                font-weight: 700;
+            }
+            .guide-strip {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+                gap: 0.7rem;
+                margin: 0.25rem 0 1.1rem;
+            }
+            .guide-step {
+                background: rgba(255, 255, 255, 0.82);
+                border: 1px solid rgba(23, 50, 74, 0.08);
+                border-radius: 16px;
+                padding: 0.8rem 0.9rem;
+                box-shadow: 0 8px 20px rgba(16, 51, 82, 0.04);
+            }
+            .guide-step-title {
+                color: #17324a;
+                font-size: 0.82rem;
+                font-weight: 800;
+                margin-bottom: 0.16rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+            }
+            .guide-step-copy {
+                color: #59738b;
+                font-size: 0.88rem;
+                line-height: 1.4;
+            }
+            .planner-shell {
+                background: rgba(255, 255, 255, 0.84);
+                border: 1px solid rgba(21, 49, 73, 0.08);
+                border-radius: 24px;
+                padding: 1.2rem 1.15rem 0.55rem;
+                box-shadow: 0 14px 34px rgba(16, 51, 82, 0.06);
+                margin-bottom: 1rem;
+            }
+            .planner-row-title {
+                color: #17324a;
+                font-size: 0.82rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                margin: 0.1rem 0 0.55rem;
+            }
             .flight-card {
-                background: rgba(255, 255, 255, 0.88);
+                background: rgba(255, 255, 255, 0.92);
                 border: 1px solid rgba(19, 50, 74, 0.08);
-                border-radius: 18px;
+                border-radius: 20px;
                 padding: 1rem 1.1rem;
                 margin-bottom: 0.85rem;
-                box-shadow: 0 10px 24px rgba(16, 51, 82, 0.08);
+                box-shadow: 0 10px 24px rgba(16, 51, 82, 0.06);
             }
             .spotlight-card {
                 min-height: 168px;
@@ -1293,6 +1565,92 @@ def main() -> None:
                 font-size: 1rem;
                 font-weight: 700;
             }
+            .tour-card {
+                background: rgba(255, 255, 255, 0.9);
+                border: 1px solid rgba(19, 50, 74, 0.08);
+                border-radius: 16px;
+                padding: 0.95rem 1rem;
+                box-shadow: 0 8px 20px rgba(16, 51, 82, 0.06);
+                height: 100%;
+            }
+            .tour-title {
+                color: #17324a;
+                font-size: 0.92rem;
+                font-weight: 700;
+                margin-bottom: 0.28rem;
+            }
+            .tour-copy {
+                color: #59738b;
+                font-size: 0.88rem;
+                line-height: 1.45;
+            }
+            .planner-heading {
+                color: #17324a;
+                font-size: 1.18rem;
+                font-weight: 800;
+                margin: 0 0 0.2rem;
+            }
+            .planner-subcopy {
+                color: #5f7890;
+                font-size: 0.92rem;
+                margin-bottom: 0.9rem;
+            }
+            .planner-chip {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.4rem;
+                border-radius: 999px;
+                background: #eef5fb;
+                color: #164a72;
+                padding: 0.35rem 0.7rem;
+                font-size: 0.82rem;
+                font-weight: 700;
+                border: 1px solid rgba(15, 76, 129, 0.1);
+                margin: 0.2rem 0 0.65rem;
+            }
+            .section-heading-wrap {
+                margin: 1rem 0 0.7rem;
+            }
+            .section-heading {
+                color: #17324a;
+                font-size: 1.08rem;
+                font-weight: 800;
+            }
+            .section-caption {
+                margin: 0.18rem 0 0;
+                color: #60788f;
+                font-size: 0.9rem;
+            }
+            div[data-testid="stMetric"] {
+                background: rgba(255, 255, 255, 0.78);
+                border: 1px solid rgba(19, 50, 74, 0.08);
+                border-radius: 18px;
+                padding: 0.8rem 0.95rem;
+                box-shadow: 0 8px 20px rgba(16, 51, 82, 0.04);
+            }
+            div[data-testid="stMetricLabel"] {
+                color: #627c93;
+            }
+            div[data-testid="stMetricValue"] {
+                color: #17324a;
+            }
+            div[data-testid="stHorizontalBlock"] div[data-testid="stButton"] > button[kind="primary"] {
+                border-radius: 14px;
+                height: 3rem;
+                font-weight: 800;
+                background: linear-gradient(135deg, #163f5d, #276f9d);
+                border: none;
+            }
+            div[data-testid="stHorizontalBlock"] div[data-testid="stButton"] > button[kind="secondary"] {
+                border-radius: 12px;
+            }
+            .element-container:has(> div[data-testid="stDataFrame"]) {
+                background: rgba(255, 255, 255, 0.76);
+                border: 1px solid rgba(19, 50, 74, 0.08);
+                border-radius: 18px;
+                padding: 0.45rem 0.5rem;
+                box-shadow: 0 8px 20px rgba(16, 51, 82, 0.04);
+            }
         </style>
         """,
         unsafe_allow_html=True,
@@ -1301,40 +1659,53 @@ def main() -> None:
     st.markdown(
         """
         <div class="hero">
-            <h1>🧳 Jetpot</h1>
-            <p>Lucky-feeling travel planning with live flights, stay ideas, and sightseeing picks packed into clear, demo-friendly trip options.</p>
+            <div class="hero-kicker">SerpApi travel planner</div>
+            <h1>🧳 VibeTrip</h1>
+            <p>Build a quick trip plan with real flight data, a usable hotel option, and a few things worth doing once you land.</p>
+            <div class="hero-meta">
+                <div class="hero-pill">Flights + hotels + sights</div>
+                <div class="hero-pill">Cache-first demo mode</div>
+                <div class="hero-pill">Not a booking site</div>
+            </div>
         </div>
         """,
         unsafe_allow_html=True,
     )
 
+    default_trip_prompt = trip_prompts[0] if trip_prompts else {}
     default_departure = date.today() + timedelta(days=14)
     default_return = default_departure + timedelta(days=3)
 
     if "origin_input" not in st.session_state:
-        st.session_state["origin_input"] = "AUS"
+        st.session_state["origin_input"] = default_trip_prompt.get("origin", "AUS")
     if "trip_mode_input" not in st.session_state:
         st.session_state["trip_mode_input"] = "Specific destination"
     if "destination_input" not in st.session_state:
-        st.session_state["destination_input"] = "LAX"
+        st.session_state["destination_input"] = default_trip_prompt.get("destination", "LAX")
     if "destination_name_input" not in st.session_state:
-        st.session_state["destination_name_input"] = "San Francisco"
+        st.session_state["destination_name_input"] = default_trip_prompt.get(
+            "destination_name",
+            airport_label(st.session_state["destination_input"]),
+        )
     if "hotel_query_input" not in st.session_state:
-        st.session_state["hotel_query_input"] = "San Francisco hotels"
+        st.session_state["hotel_query_input"] = default_trip_prompt.get(
+            "hotel_query",
+            f'{st.session_state["destination_name_input"]} hotels',
+        )
     if "departure_input" not in st.session_state:
         st.session_state["departure_input"] = default_departure
     if "return_input" not in st.session_state:
         st.session_state["return_input"] = default_return
     if "budget_input" not in st.session_state:
-        st.session_state["budget_input"] = 350
+        st.session_state["budget_input"] = int(default_trip_prompt.get("budget", 1000 if default_trip_prompt else 350))
     if "last_preset_phrase" not in st.session_state:
         st.session_state["last_preset_phrase"] = "Custom"
     if "last_trip_prompt" not in st.session_state:
-        st.session_state["last_trip_prompt"] = trip_prompts[0]["phrase"] if trip_prompts else "Custom"
+        st.session_state["last_trip_prompt"] = "Custom"
     if "depart_in_days_input" not in st.session_state:
-        st.session_state["depart_in_days_input"] = 14
+        st.session_state["depart_in_days_input"] = int(default_trip_prompt.get("departure_offset_days", 14))
     if "trip_length_days_input" not in st.session_state:
-        st.session_state["trip_length_days_input"] = 3
+        st.session_state["trip_length_days_input"] = int(default_trip_prompt.get("trip_length_days", 3))
     if "experience_mode" not in st.session_state:
         st.session_state["experience_mode"] = "Complete trip"
     if "selected_trip_style" not in st.session_state:
@@ -1349,6 +1720,16 @@ def main() -> None:
         st.session_state["active_modal"] = None
     if "modal_payload" not in st.session_state:
         st.session_state["modal_payload"] = {}
+    if "show_tour" not in st.session_state:
+        st.session_state["show_tour"] = True
+    if "auto_load_once" not in st.session_state:
+        st.session_state["auto_load_once"] = True
+
+    if trip_prompts and not st.session_state.get("initial_trip_prefill_done"):
+        apply_trip_prompt(default_trip_prompt)
+        st.session_state["selected_trip_style"] = default_trip_prompt["phrase"]
+        st.session_state["last_trip_prompt"] = default_trip_prompt["phrase"]
+        st.session_state["initial_trip_prefill_done"] = True
 
     active_modal = st.session_state.get("active_modal")
     if active_modal == "flights":
@@ -1362,13 +1743,46 @@ def main() -> None:
     elif active_modal == "trip_details":
         trip_details_dialog()
 
+    if st.session_state.get("show_tour", True):
+        tour_header_col, tour_button_col = st.columns([0.94, 0.06])
+        with tour_header_col:
+            render_section_heading("Quick Tour", "A fast read before you start.")
+        with tour_button_col:
+            if st.button("✕", key="hide-tour", use_container_width=True, help="Dismiss tour"):
+                st.session_state["show_tour"] = False
+        st.markdown(
+            """
+            <div class="guide-strip">
+                <div class="guide-step">
+                    <div class="guide-step-title">1. Pick a mode</div>
+                    <div class="guide-step-copy">Use the sidebar to switch between Complete trip and Flight deals.</div>
+                </div>
+                <div class="guide-step">
+                    <div class="guide-step-title">2. Set your route</div>
+                    <div class="guide-step-copy">Choose an origin, a destination or explore mode, and how many days you want away.</div>
+                </div>
+                <div class="guide-step">
+                    <div class="guide-step-title">3. Reuse cache</div>
+                    <div class="guide-step-copy">Saved trips and searches in the sidebar repopulate the form so you can demo without burning API credits.</div>
+                </div>
+                <div class="guide-step">
+                    <div class="guide-step-title">4. Inspect results</div>
+                    <div class="guide-step-copy">Open flights, hotels, sights, and itinerary views without losing your place on the page.</div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
     with st.sidebar:
-        st.header("Plan Your Escape")
+        st.markdown("## Plan Your Escape")
+        st.caption("Use a curated trip, load a saved cache entry, or tune every field yourself before building.")
+        search_clicked = st.button("Build my trip", type="primary", use_container_width=True, key="build-trip-top")
+
         experience_mode = st.radio(
             "Experience",
             options=["Complete trip", "Flight deals"],
             key="experience_mode",
-            horizontal=True,
         )
         trip_prompt_labels = ["None"] + list(trip_prompt_lookup.keys())
         selected_trip_prompt_phrase = "None"
@@ -1376,6 +1790,7 @@ def main() -> None:
         data_source = "Auto (cache first)"
         selected_cache_label = None
 
+        st.markdown("**Saved Starters**")
         if experience_mode == "Complete trip":
             selected_trip_prompt_phrase = st.selectbox(
                 "Trip style",
@@ -1389,6 +1804,7 @@ def main() -> None:
                 st.session_state["selected_trip_cache_label"] = "Custom"
             elif selected_trip_prompt_phrase == "Custom":
                 st.session_state["last_trip_prompt"] = "Custom"
+
             saved_trip_labels = ["Custom"] + list(trip_cache_lookup.keys())
             selected_trip_cache_label = st.selectbox(
                 "Saved trips",
@@ -1405,9 +1821,8 @@ def main() -> None:
                     st.session_state["last_trip_prompt"] = "Custom"
                 except (OSError, json.JSONDecodeError):
                     st.warning("Unable to load that saved trip cache entry.")
-            st.caption("Each trip style opens with two packaged options in the main view.")
+            st.caption("Curated trip styles open with two ready-to-pitch bundles below.")
         else:
-            st.markdown("**Flight Search**")
             preset_labels = ["Custom"] + list(preset_lookup.keys())
             selected_preset_phrase = st.selectbox(
                 "Flight preset",
@@ -1421,12 +1836,6 @@ def main() -> None:
             elif selected_preset_phrase == "Custom":
                 st.session_state["last_preset_phrase"] = "Custom"
 
-            data_source = st.radio(
-                "Search source",
-                options=["Auto (cache first)", "Live SerpApi", "Cached demo JSON"],
-                key="search_source_input",
-                help="Use cached JSON for repeatable demos and fewer API calls.",
-            )
             saved_search_labels = ["Custom"] + list(cache_lookup.keys())
             selected_cache_label = st.selectbox(
                 "Saved searches",
@@ -1445,7 +1854,14 @@ def main() -> None:
                     st.session_state["last_preset_phrase"] = "Custom"
                 except (OSError, json.JSONDecodeError):
                     st.warning("Unable to load that saved search cache entry.")
-            elif data_source == "Cached demo JSON" and not cache_lookup:
+
+            data_source = st.radio(
+                "Search source",
+                options=["Auto (cache first)", "Live SerpApi", "Cached demo JSON"],
+                key="search_source_input",
+                help="Use cached JSON for repeatable demos and fewer API calls.",
+            )
+            if data_source == "Cached demo JSON" and not cache_lookup:
                 st.caption("No cached demo JSON files found in `demo_cache/` yet.")
 
         st.markdown("**Trip Details**")
@@ -1460,7 +1876,6 @@ def main() -> None:
             "Mode",
             options=["Specific destination", "Explore cheap destinations"],
             key="trip_mode_input",
-            horizontal=True,
         )
         destination = ""
         if trip_mode == "Specific destination":
@@ -1471,6 +1886,8 @@ def main() -> None:
                     help="Use a 3-letter airport code like LAX or CDG.",
                 )
             )
+        else:
+            st.text_input("To", value="Explore mode", disabled=True)
         destination_name = st.text_input(
             "Destination name",
             key="destination_name_input",
@@ -1481,20 +1898,47 @@ def main() -> None:
             key="hotel_query_input",
             help="Optional custom hotel search phrase, for example Waikiki hotels.",
         )
-
-        depart_col, length_col = st.columns(2)
-        with depart_col:
-            depart_in_days = st.number_input("Depart in", min_value=1, max_value=365, step=1, key="depart_in_days_input")
-        with length_col:
-            trip_length_days = st.number_input("Days", min_value=1, max_value=30, step=1, key="trip_length_days_input")
-        departure_date = date.today() + timedelta(days=int(depart_in_days))
-        return_date = departure_date + timedelta(days=int(trip_length_days))
-        st.caption(f"Travel window: {departure_date.isoformat()} → {return_date.isoformat()}")
+        depart_in_days = st.number_input("Depart in", min_value=1, max_value=365, step=1, key="depart_in_days_input")
+        trip_length_days = st.number_input("Days", min_value=1, max_value=30, step=1, key="trip_length_days_input")
         max_budget = st.number_input("Budget (USD)", min_value=50, max_value=10000, step=25, key="budget_input")
-        st.markdown("**Run**")
-        save_to_cache = st.checkbox("Save live results to demo cache", value=True)
-        show_debug = st.checkbox("Show raw SerpApi response", value=False)
-        search_clicked = st.button("Build my trip", type="primary", use_container_width=True)
+
+    departure_date = date.today() + timedelta(days=int(depart_in_days))
+    return_date = departure_date + timedelta(days=int(trip_length_days))
+    with st.sidebar:
+        st.caption(f"Travel window: {departure_date.isoformat()} → {return_date.isoformat()}")
+
+    predicted_live_lookup = False
+    predicted_source_text = "Cached result expected"
+    if experience_mode == "Complete trip":
+        predicted_prompt = build_active_trip_prompt(
+            origin=origin,
+            destination=destination,
+            destination_name=destination_name,
+            hotel_query=hotel_query,
+            depart_in_days=int(depart_in_days),
+            trip_length_days=int(trip_length_days),
+            budget=float(max_budget),
+        )
+        predicted_live_lookup = not trip_cache_path(predicted_prompt).exists()
+        predicted_source_text = "Live trip bundle will run" if predicted_live_lookup else "Saved trip bundle will load"
+    else:
+        predicted_params = build_search_params(origin, trip_mode, destination, departure_date, return_date)
+        predicted_cache_path = cache_path_for_params(predicted_params)
+        if data_source == "Cached demo JSON":
+            predicted_live_lookup = False
+            predicted_source_text = "Saved flight cache will load"
+        elif data_source == "Auto (cache first)" and predicted_cache_path.exists():
+            predicted_live_lookup = False
+            predicted_source_text = "Cached flight result will load"
+        else:
+            predicted_live_lookup = True
+            predicted_source_text = "Live SerpApi flight search will run"
+
+    with st.sidebar:
+        st.markdown("**Run Search**")
+        st.markdown(f'<div class="planner-chip">Status: {predicted_source_text}</div>', unsafe_allow_html=True)
+        save_to_cache = st.checkbox("Save live results", value=True)
+        show_debug = st.checkbox("Show source data", value=False)
 
     st.caption("Flight data may change. Always verify prices before booking.")
 
@@ -1515,7 +1959,40 @@ def main() -> None:
             st.warning(error)
         st.stop()
 
+    if (
+        not search_clicked
+        and st.session_state.get("auto_load_once", False)
+        and experience_mode == "Complete trip"
+        and selected_trip_prompt_phrase != "Custom"
+    ):
+        search_clicked = True
+        st.session_state["auto_load_once"] = False
+
     if not search_clicked:
+        last_results = st.session_state.get("last_results")
+        if isinstance(last_results, dict) and last_results.get("experience_mode") == experience_mode:
+            st.info("Showing the last built results. Adjust the sidebar and click `Build my trip` to refresh.")
+            if experience_mode == "Complete trip":
+                render_complete_trip_results(
+                    prompt=last_results["prompt"],
+                    bundle=last_results["bundle"],
+                    trip_bundle_source=last_results["trip_bundle_source"],
+                    trip_cache_name=last_results["trip_cache_name"],
+                    show_debug=bool(last_results.get("show_debug", False)),
+                )
+            else:
+                render_flight_search_results(
+                    raw_response=last_results["raw_response"],
+                    origin=last_results["origin"],
+                    trip_mode=last_results["trip_mode"],
+                    max_budget=float(last_results["max_budget"]),
+                    search_phrase=last_results["search_phrase"],
+                    response_source=last_results["response_source"],
+                    matching_cache_name=last_results["matching_cache_name"],
+                    show_debug=bool(last_results.get("show_debug", False)),
+                    cache_meta=last_results.get("cache_meta"),
+                )
+            st.stop()
         st.info("Choose a style, adjust the details, and build your trip.")
         st.stop()
 
@@ -1565,13 +2042,21 @@ def main() -> None:
             st.success(f"Saved trip bundle to `trip_cache/{trip_bundle_path.name}`.")
 
         if trip_bundle_payload:
-            render_trip_bundle(active_trip_prompt, trip_bundle_payload["bundle"], float(active_trip_prompt.get("budget", 1000)))
-            with st.expander("Trip Bundle Details", expanded=False):
-                st.write(f"Trip bundle source: {trip_bundle_source}")
-                st.write(f"Trip cache file: `trip_cache/{trip_bundle_path.name}`")
-            if show_debug:
-                with st.expander("🔎 Source Data"):
-                    st.json(trip_bundle_payload["bundle"])
+            st.session_state["last_results"] = {
+                "experience_mode": "Complete trip",
+                "prompt": active_trip_prompt,
+                "bundle": trip_bundle_payload["bundle"],
+                "trip_bundle_source": trip_bundle_source,
+                "trip_cache_name": trip_bundle_path.name,
+                "show_debug": show_debug,
+            }
+            render_complete_trip_results(
+                prompt=active_trip_prompt,
+                bundle=trip_bundle_payload["bundle"],
+                trip_bundle_source=trip_bundle_source,
+                trip_cache_name=trip_bundle_path.name,
+                show_debug=show_debug,
+            )
         st.stop()
 
     search_phrase = selected_preset_phrase if selected_preset_phrase != "Custom" else build_search_phrase(origin, trip_mode, destination, max_budget)
@@ -1633,101 +2118,35 @@ def main() -> None:
             )
             st.success(f"Saved this search to `demo_cache/{matching_cache_path.name}` for future demos.")
 
-    if raw_response.get("error"):
-        st.error(f"SerpApi error: {raw_response['error']}")
-        st.stop()
-
-    effective_trip_mode = trip_mode
-    if cache_payload and cache_payload.get("trip_mode"):
-        effective_trip_mode = str(cache_payload["trip_mode"])
-
-    if effective_trip_mode == "Specific destination":
-        parsed_results = parse_google_flights_response(raw_response, max_budget)
-    else:
-        parsed_results = parse_google_travel_explore_response(raw_response, origin, max_budget)
-
-    if not parsed_results:
-        st.warning("No flight options were returned for this search. Try changing dates, destination, or trip mode.")
-        if show_debug:
-            with st.expander("🔎 Source Data"):
-                st.json(raw_response)
-        st.stop()
-
-    actionable_results = [result for result in parsed_results if result.get("is_actionable")]
-    incomplete_results = [result for result in parsed_results if not result.get("is_actionable")]
-    display_results = actionable_results if actionable_results else parsed_results
-
-    ranked_results = rank_results(display_results)
-    top_results = ranked_results[:5]
-    cheapest = pick_cheapest(display_results)
-    fastest = pick_fastest(display_results)
-    best_value = pick_best_value(display_results)
-
-    summary_df = pd.DataFrame(ranked_results)
-
-    metric_1, metric_2, metric_3, metric_4 = st.columns(4)
-    metric_1.metric("Cheapest", cheapest["price_display"] if cheapest else "N/A")
-    metric_2.metric("Best deal score", best_value["deal_score"] if best_value else "N/A")
-    metric_3.metric("Fastest", fastest["duration_display"] if fastest else "N/A")
-    metric_4.metric("Options found", len(display_results))
-
-    if incomplete_results:
-        st.info(
-            f"Omitted {len(incomplete_results)} destination ideas from ranking because SerpApi did not return complete fare details for them."
-        )
-
-    highlight_col1, highlight_col2, highlight_col3 = st.columns(3)
-    with highlight_col1:
-        render_highlight_card("Best Value", "🧠", best_value)
-    with highlight_col2:
-        render_highlight_card("Cheapest", "💸", cheapest)
-    with highlight_col3:
-        render_highlight_card("Fastest", "⚡", fastest)
-
-    st.subheader("Flight Options")
-    for index, result in enumerate(top_results, start=1):
-        render_ranked_card(result, index)
-
-    st.subheader("Comparison Table")
-    display_columns = [
-        "departure_airport",
-        "arrival_airport",
-        "price_display",
-        "duration_display",
-        "stops_display",
-        "airline",
-        "deal_score",
-    ]
-    comparison_df = summary_df[display_columns].rename(
-        columns={
-            "departure_airport": "From",
-            "arrival_airport": "To",
-            "price_display": "Price",
-            "duration_display": "Duration",
-            "stops_display": "Stops",
-            "airline": "Airline",
-            "deal_score": "Deal Score",
+    st.session_state["last_results"] = {
+        "experience_mode": "Flight deals",
+        "raw_response": raw_response,
+        "origin": origin,
+        "trip_mode": trip_mode,
+        "max_budget": float(max_budget),
+        "search_phrase": search_phrase,
+        "response_source": response_source,
+        "matching_cache_name": matching_cache_path.name,
+        "show_debug": show_debug,
+        "cache_meta": {
+            "captured_at": cache_payload.get("captured_at"),
+            "search_params": cache_payload.get("search_params"),
+            "trip_mode": cache_payload.get("trip_mode"),
         }
+        if cache_payload
+        else None,
+    }
+    render_flight_search_results(
+        raw_response=raw_response,
+        origin=origin,
+        trip_mode=trip_mode,
+        max_budget=float(max_budget),
+        search_phrase=search_phrase,
+        response_source=response_source,
+        matching_cache_name=matching_cache_path.name,
+        show_debug=show_debug,
+        cache_meta=st.session_state["last_results"].get("cache_meta"),
     )
-    st.dataframe(comparison_df, use_container_width=True, hide_index=True)
-
-    st.markdown(
-        '<p class="disclaimer">This app summarizes public flight search data. It does not sell tickets. Verify before booking.</p>',
-        unsafe_allow_html=True,
-    )
-
-    with st.expander("Demo Cache Details", expanded=False):
-        st.write(f"Search phrase: {search_phrase}")
-        st.write(f"Response source: {response_source}")
-        if response_source == "cache" and cache_payload:
-            st.write(f"Captured at: {cache_payload.get('captured_at', 'unknown')}")
-            st.write(f"Cache file: {cache_payload.get('search_params', {})}")
-        else:
-            st.write(f"Suggested cache file: `demo_cache/{matching_cache_path.name}`")
-
-    if show_debug:
-        with st.expander("🔎 Source Data"):
-            st.json(raw_response)
 
 
 if __name__ == "__main__":

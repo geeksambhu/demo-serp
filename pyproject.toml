@@ -1,5 +1,5 @@
 [project]
-name = "jetpot"
+name = "vibetrip"
 version = "0.1.0"
 description = "A Streamlit travel planner for curated flight, hotel, and sightseeing trip options powered by SerpApi."
 readme = "README.md"

@@ -1667,6 +1667,9 @@ def main() -> None:
                 <div class="hero-pill">Cache-first demo mode</div>
                 <div class="hero-pill">Not a booking site</div>
             </div>
+            <p style="margin-top:0.85rem; font-size:0.9rem;">
+                Live demo: <a href="https://vibetrip.streamlit.app/" target="_blank" style="color:#ffffff; font-weight:700; text-decoration:underline;">vibetrip.streamlit.app</a>
+            </p>
         </div>
         """,
         unsafe_allow_html=True,

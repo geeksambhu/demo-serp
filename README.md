@@ -4,6 +4,8 @@
 
 VibeTrip is a Streamlit travel planner for quick trip research. Enter an origin airport, a budget, and either a destination or an explore-style search, then review real SerpApi-powered flight ideas or complete trip bundles ranked for value.
 
+Live demo: `https://vibetrip.streamlit.app/`
+
 This is built for a SerpApi PyCon raffle challenge and tuned for a short live demo:
 
 - useful enough to answer "Where can I fly cheaply this weekend?"
@@ -17,7 +19,7 @@ SerpApi provides structured access to public flight, hotel, and destination data
 ## Features
 
 - Search from an origin airport with a specific destination or an explore mode
-- Keep the planner at the top of the page instead of hiding controls in a sidebar
+- Use a sidebar planner for quick route, budget, and cache selection
 - Pull live flight data from SerpApi using `google_flights` or `google_travel_explore`
 - Rank results by price, duration, stops, and budget-aware deal quality
 - Highlight best value, cheapest, and fastest options

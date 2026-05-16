@@ -1,0 +1,1812 @@
+{
+  "cache_version": 1,
+  "captured_at": "2026-05-16",
+  "search_phrase": "What are good 3-day trips from Dallas under $300?",
+  "trip_mode": "Explore cheap destinations",
+  "search_params": {
+    "engine": "google_travel_explore",
+    "departure_id": "DFW",
+    "outbound_date": "2026-06-03",
+    "return_date": "2026-06-06",
+    "currency": "USD",
+    "hl": "en"
+  },
+  "raw_response": {
+    "search_metadata": {
+      "id": "6a08021a683863be99eba68d",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/SW0B2X3aaG7pIRZIrFUhxg/6a08021a683863be99eba68d.json",
+      "created_at": "2026-05-16 05:35:22 UTC",
+      "processed_at": "2026-05-16 05:35:22 UTC",
+      "google_travel_explore_url": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAQ",
+      "raw_html_file": "https://serpapi.com/searches/SW0B2X3aaG7pIRZIrFUhxg/6a08021a683863be99eba68d.html",
+      "prettify_html_file": "https://serpapi.com/searches/SW0B2X3aaG7pIRZIrFUhxg/6a08021a683863be99eba68d.prettify",
+      "total_time_taken": 2.55
+    },
+    "search_parameters": {
+      "engine": "google_travel_explore",
+      "hl": "en",
+      "gl": "us",
+      "departure_id": "DFW",
+      "outbound_date": "2026-06-03",
+      "return_date": "2026-06-06",
+      "currency": "USD"
+    },
+    "destinations": [
+      {
+        "destination_id": "/m/030qb3t",
+        "name": "Los Angeles",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 34.0549076,
+          "longitude": -118.242643
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTARk3fg4JrXocEwFZ__Vu1gTQq_0fAQykb5FfW16JDWxFEvSzsdWXG8thXEjtdTNrnGpD6L0OVyiRFQb3xGcQk6R1qWqf3S-SjvkZccA",
+        "destination_airport": {
+          "code": "LAX"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 264,
+        "hotel_price": 202,
+        "flight_duration": 502,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBECoOCAMSCi9tLzAzMHFiM3Q",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F030qb3t&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0cv3w",
+        "name": "Las Vegas",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 36.171563,
+          "longitude": -115.1391009
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu92znS_LNcf-AXv--tTB8NqlNSESpb9FmWerXxvY1AJRwqHluyG2zDEgBLgxVEVWpuYPwEE2JVxB0MhBzOU_YK6AXQfqD-Il3YAovBg",
+        "destination_airport": {
+          "code": "LAS"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 96,
+        "flight_duration": 390,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBjdjN3",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0cv3w&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0d9jr",
+        "name": "Seattle",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 47.6061389,
+          "longitude": -122.3328481
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSAiBpSv2yUgizRXFmwGP3MTh6M7DGi6u5WgjN5zbRJ9jD42_UzeQNdCTyuPiU5fj8jF1Podav6__a_A",
+        "destination_airport": {
+          "code": "SEA"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 304,
+        "hotel_price": 261,
+        "flight_duration": 832,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBkOWpy",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0d9jr&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0d6lp",
+        "name": "San Francisco",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 37.7749295,
+          "longitude": -122.4194155
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb3M4B-mwVbnbCg6A-uHJ50Yqot_FqJt5CFqZ05KpfufPCKnMWlqgbieVpj1kd7zhr8xgADYXDvTFPuFz9z_Po42wjClju7n8vBoFD9A",
+        "destination_airport": {
+          "code": "SFO"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 264,
+        "hotel_price": 241,
+        "flight_duration": 509,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBkNmxw",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0d6lp&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/071vr",
+        "name": "San Diego",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 32.715738,
+          "longitude": -117.1610838
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWdRnCnA_7DkojrSakc7HFLSxr7nUHYpZMHwUnc6h0Gdge67NClnTorOL-Daze0sXU3QOgG5mAK9MsEq-EM6hk1PvnQzRJLjN1Neepkg",
+        "destination_airport": {
+          "code": "SAN"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 206,
+        "flight_duration": 723,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzA3MXZy",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F071vr&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/01cx_",
+        "name": "Boston",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 42.3555076,
+          "longitude": -71.0565364
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0Ijatew2hxV7jkGPAsiRB3H6Re26hsTSKIbl1Vlr-M6UhlpRY7lT9qi_6dpEY7pVOrIAsm2jRfiXY6iHIkMUjjxmZdGPGR1plRHOtzA",
+        "destination_airport": {
+          "code": "BOS"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 350,
+        "hotel_price": 335,
+        "flight_duration": 480,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzAxY3hf",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F01cx_&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/013yq",
+        "name": "Atlanta",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 33.7501275,
+          "longitude": -84.3885209
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJcNkmexDz0rCu-7-0YJxrxK3NHqgqxUPA1C0qPvCDWhAnwiP19PFPLWtxsLqtWO_AeB7NxseBEBBvUeZ2yKofiZWde-xYITCvjffRew",
+        "destination_airport": {
+          "code": "ATL"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 258,
+        "hotel_price": 178,
+        "flight_duration": 141,
+        "number_of_stops": 0,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzAxM3lx",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F013yq&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/02_286",
+        "name": "New York",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 40.7127753,
+          "longitude": -74.0059728
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSy0LlOnvIOKZvVBa0YMy-1LPf54ANwcklVvu2RrMCQaCFtmMJmktOtpCLF8ax9ZPKSjInoe3DlCOfBKpmC53nnRpMtZ5qDHyCZJzRPg",
+        "destination_airport": {
+          "code": "EWR"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 304,
+        "hotel_price": 338,
+        "flight_duration": 474,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAyXzI4Ng",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F02_286&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/01_d4",
+        "name": "Chicago",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 41.88325,
+          "longitude": -87.6323879
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJMxpnOjhPrxERWX-ArNulerDUMCP8pP6LE52vhHPK3QhmiftGGZsUyHM7HQ_Z8Ja1ZkAWje5IDSzlz3rianoBqOBuatJwnj4pUyEZlA",
+        "destination_airport": {
+          "code": "ORD"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 328,
+        "flight_duration": 1513,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzAxX2Q0",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F01_d4&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/02cl1",
+        "name": "Denver",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 39.7392358,
+          "longitude": -104.990251
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQsldpQbHhRtEH2RkyVQPYzYmB9kzqzGZkO6MMgyiAMU6XGtCpyu-O1x7V0-GV9HyUUnMZNOY53zXEkCaT5z97sj5r45K4JLAGw3zR7g",
+        "destination_airport": {
+          "code": "DEN"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 198,
+        "hotel_price": 188,
+        "flight_duration": 135,
+        "number_of_stops": 0,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzAyY2wx",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F02cl1&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/01626x",
+        "name": "Zion National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 37.2982022,
+          "longitude": -113.0263005
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGE_W9V0oG_b3m7jzH0Dcd8g07xaI9oj5LuZOJnZJ-AOTQf4ywbrW0cauvDqslx0mUxbZh1DjeD5EVEiqF0NgzZCdOm3zl4pGQhp27lM",
+        "destination_airport": {
+          "code": "LAS",
+          "location": "Las Vegas",
+          "location_id": "/m/0cv3w"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 155,
+        "flight_duration": 390,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "car_duration": 150,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxNjI2eA",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F01626x&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0f2v0",
+        "name": "Miami",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 25.7616798,
+          "longitude": -80.1917902
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhlHkMsMziRb7h4PsDzIzUkoDmYShx02v4iBLFDtotsN9Ax1mGEk9Vs97xFoAnGmkK_NRKJtJVBu45TUJ_LBwFPOWqAgpbzSPadIoSpw",
+        "destination_airport": {
+          "code": "FLL"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 167,
+        "flight_duration": 480,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBmMnYw",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0f2v0&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0f2tj",
+        "name": "New Orleans",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 29.9508941,
+          "longitude": -90.0758356
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKcy-JaJJGCVBb1Pkn7ORTrgBF93OIwDFCc3JU32Ka5bfQK0h-llHXP5vIKLXqHXYUya-E6Bw_m-JWEePfd2zQ8SMJhLYy-nyW5g6LzQ",
+        "destination_airport": {
+          "code": "MSY"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 296,
+        "hotel_price": 155,
+        "flight_duration": 636,
+        "number_of_stops": 1,
+        "airline": "American and Frontier",
+        "airline_code": "multi",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBmMnRq",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0f2tj&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0ply0",
+        "name": "Orlando",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 28.5383832,
+          "longitude": -81.3789269
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcS3xnYk_lGP7Z8SnXNwAITWUnFAzk9EgdltcnifbUZ4YmM98UmHYrvAcE2BdOo4UqiROPXA25uWGlUJbglqLWoptWA76kEGZm09ppMA8A",
+        "destination_airport": {
+          "code": "MCO"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 120,
+        "flight_duration": 450,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBwbHkw",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0ply0&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0rh6k",
+        "name": "Washington, D.C.",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 38.9072873,
+          "longitude": -77.0369274
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRG0OK4wTkRsqDVobvhtBOPZMDsUETpgJ7jPzOA--4D-HL-0BVkyp4S9gvw7CBWMKyfFVS0lLRn7pmR-Q",
+        "destination_airport": {
+          "code": "IAD"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 278,
+        "flight_duration": 508,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzByaDZr",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0rh6k&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0h7h6",
+        "name": "Toronto",
+        "country": "Canada",
+        "gps_coordinates": {
+          "latitude": 43.6548253,
+          "longitude": -79.388447
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYoaDkFWO8Zv4BUtmfOHDd3QvGJZci9lqWZfFVV90hiu-LIfCYQxG7KdPHrsY1qybwY_7HsDhO2sgzed6ynG04_NxiRZQlZhjUvR8K3A",
+        "destination_airport": {
+          "code": "YYZ"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 553,
+        "hotel_price": 201,
+        "flight_duration": 183,
+        "number_of_stops": 0,
+        "airline": "American and Air Canada",
+        "airline_code": "multi",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBoN2g2",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0h7h6&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0dclg",
+        "name": "Philadelphia",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 39.9525839,
+          "longitude": -75.1652215
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT07F49RT1tqvCRdJ-7cG65bnbxsNJOZt2niYKz6rJvRCen3Z8E3biDPAfqVImpyItLoMeyTgQTFLgTZ2hkWffzaggtG4CkYtVX5VpsaQ",
+        "destination_airport": {
+          "code": "PHL"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 254,
+        "hotel_price": 215,
+        "flight_duration": 340,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBkY2xn",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0dclg&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/02frhbc",
+        "name": "Portland",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 45.515232,
+          "longitude": -122.6783853
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9DFzK-XeKaBSFxXbFROGXsZk7YZGHoTAQxZ43-PVeL_gYPJj025sdmGi6uV1CeeQy8Q9I1QkSIwIqPOH6T2bj5oZEpHLGhRS8fYqWGw",
+        "destination_airport": {
+          "code": "PDX"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 304,
+        "hotel_price": 150,
+        "flight_duration": 816,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBECoOCAMSCi9tLzAyZnJoYmM",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F02frhbc&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0c_y8",
+        "name": "Yosemite National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 37.8651011,
+          "longitude": -119.5383294
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRptPuSQ96qbtxIWAgdi0_ZuW-p_qR8AtwSAWdcyuBAAX4w-8q8vkiEnJ6X7kjWbeuJlXWAFX5PqwtpJw",
+        "destination_airport": {
+          "code": "FAT",
+          "location": "Fresno",
+          "location_id": "/m/0mzy7"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 370,
+        "hotel_price": 213,
+        "flight_duration": 381,
+        "number_of_stops": 1,
+        "airline": "Alaska",
+        "airline_code": "AS",
+        "car_duration": 90,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBjX3k4",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0c_y8&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0vzm",
+        "name": "Austin",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 30.267153,
+          "longitude": -97.7430608
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzygn7hi_n902Emd0nYwScfyBxJanvyQKi2mxcoNgMS1BsOwBhKzucEGHtmGxgveqcvsadXDC0xRr4G-nyuBML3jn9kyI6HmFuP6TD2Q",
+        "destination_airport": {
+          "code": "AUS"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 368,
+        "hotel_price": 128,
+        "flight_duration": 64,
+        "number_of_stops": 0,
+        "airline": "American",
+        "airline_code": "AA",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDSoLCAMSBy9tLzB2em0",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0vzm&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/05jbn",
+        "name": "Nashville",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 36.1626638,
+          "longitude": -86.7816016
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYmdqtS9aVjruOTl7F-iplOC2NZJpJRsa-Fpcx_Csa_r4_Di3IUUgcK54uCn8Dl8Rdk9CNiQgkw1IllIx8p4Q6NXQXifrZk2lH8iTItQ",
+        "destination_airport": {
+          "code": "BNA"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 265,
+        "hotel_price": 191,
+        "flight_duration": 950,
+        "number_of_stops": 1,
+        "airline": "Frontier and Contour Airlines",
+        "airline_code": "multi",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzA1amJu",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F05jbn&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/08874",
+        "name": "Yellowstone National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 44.5979182,
+          "longitude": -110.561249
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOyrsAo-Ad6-oKtim1fdiT3PdQ0Y3gaw64hZ0nMVlCYgSi_yv7Q-0WtWTwH0PSkNsOX7Vqft27Upi_PnkwGKwDz2RZJ_LA699152nHA",
+        "destination_airport": {
+          "code": "WYS",
+          "location": "West Yellowstone",
+          "location_id": "/m/0x1zq"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 329,
+        "hotel_price": 402,
+        "flight_duration": 355,
+        "number_of_stops": 1,
+        "airline": "Delta",
+        "airline_code": "DL",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzA4ODc0",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F08874&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/052p7",
+        "name": "Montreal",
+        "country": "Canada",
+        "gps_coordinates": {
+          "latitude": 45.5018869,
+          "longitude": -73.5673919
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfgyOr7-LOIbU9sq3k1psofK9TzTDkBTb0xIO3dRQqY9MaHbXRNHOt2qF0UJpQjc9iapxjWubyLGUKMxcZ2-TGJgp6kwof9VTORjzJgQ",
+        "destination_airport": {
+          "code": "YUL"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 463,
+        "hotel_price": 183,
+        "flight_duration": 224,
+        "number_of_stops": 0,
+        "airline": "American",
+        "airline_code": "AA",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzA1MnA3",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F052p7&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/03l2n",
+        "name": "Houston",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 29.7600771,
+          "longitude": -95.3701108
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLSVtDuQcEdJJS8RjGeZ5FuHs5RjCwjfwibZIvdVAvcV1TKpYtARXx7kWVQoPKbpKoEqcNtBRZsQ98h3-PnOGuNsC2fni2txiMCMVrtQ",
+        "destination_airport": {
+          "code": "IAH"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 128,
+        "flight_duration": 716,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzAzbDJu",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F03l2n&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0gkgp",
+        "name": "Charleston",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 32.7833163,
+          "longitude": -79.9319664
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4s_H-QqeKok5hV6x-tqeaEaLYiztFQXNrD2hNAylocLI0sqj55HcKwfc1EACnuEbG0Qm_vyAtu4eyl--uojll1kBR-4pOD6H9gevaYw",
+        "destination_airport": {
+          "code": "CHS"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 384,
+        "hotel_price": 295,
+        "flight_duration": 158,
+        "number_of_stops": 0,
+        "airline": "American",
+        "airline_code": "AA",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBna2dw",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0gkgp&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0cnsp",
+        "name": "Bryce Canyon National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 37.5930377,
+          "longitude": -112.1870895
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnAPI4arN81ipm21ETVgC9-sJbgfLwU4g0AQqYlCXwRMi_kFlhgu9yeCIbCx0SGmVXsJ2Fc8qbYwD0C4348vG3OItNq5m1ygsSeNJc-g",
+        "destination_airport": {
+          "code": "SLC",
+          "location": "Salt Lake City",
+          "location_id": "/m/0f2r6"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 168,
+        "hotel_price": 196,
+        "flight_duration": 190,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "car_duration": 240,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBjbnNw",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0cnsp&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0f2w0",
+        "name": "San Antonio",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 29.4251905,
+          "longitude": -98.4945922
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEIUBJuIa1h9KQZlupmYHjs3ViSKJXgwqJbgVbY8qU5Rxt2_HKYcscF3Up5govUW7oC6Y-7L4jTLEufYu12RcsM5ysiQq0ZkGvuvmi0w",
+        "destination_airport": {
+          "code": "SAT"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 117,
+        "flight_duration": 585,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBmMncw",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0f2w0&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/018gyg",
+        "name": "Joshua Tree National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 33.873415,
+          "longitude": -115.9009923
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFqe1VNkTYqoTlcc4MWxBLWAUIKzidsRjiS6l536qM3GKULcgDHhlTjxXFykO9T1jA8_sJAsHS3-u2stT2yJJODBkQFophxaVx_fgcxQ",
+        "destination_airport": {
+          "code": "PSP",
+          "location": "Palm Springs",
+          "location_id": "/m/0r3tq"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 445,
+        "hotel_price": 144,
+        "flight_duration": 183,
+        "number_of_stops": 0,
+        "airline": "American",
+        "airline_code": "AA",
+        "car_duration": 60,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxOGd5Zw",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F018gyg&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0pmp2",
+        "name": "Qu\u00e9bec City",
+        "country": "Canada",
+        "gps_coordinates": {
+          "latitude": 46.8130816,
+          "longitude": -71.2074596
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSe7Tz7T61AzbmX7RmAAA2tEeTrwOn_vBoUiWiqyhqZL8gNGCs-8Yu6fAWOYKCDxuyEGYsNgbAWnn57hg",
+        "destination_airport": {
+          "code": "YQB"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 702,
+        "hotel_price": 170,
+        "flight_duration": 685,
+        "number_of_stops": 1,
+        "airline": "American and Air Canada",
+        "airline_code": "multi",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBwbXAy",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0pmp2&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/09b1k",
+        "name": "Walt Disney World\u00ae Resort",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 28.3771857,
+          "longitude": -81.57074
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCXvHNGeXyoD24XW6_CeO4uHdfC9R83zLoYEtpshXqeO7R_OSDbBT7UZIk4nxhHFFI0qgz0GoLizGElmYlDSrSpkYYDykpTSFQ3TGDRw",
+        "destination_airport": {
+          "code": "MCO",
+          "location": "Orlando",
+          "location_id": "/m/0ply0"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 117,
+        "flight_duration": 450,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzA5YjFr",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F09b1k&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0d35y",
+        "name": "Phoenix",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 33.4482948,
+          "longitude": -112.0725488
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzlmJiBnd1MroBffESp3yiYMSOJntlzNPNwMWnn8SG8TKG_op8z3qXHfXbXFK_cIZCqboMa7FepMb_orcjRaUKjtnQffWJzlBVP1NY2g",
+        "destination_airport": {
+          "code": "PHX"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 113,
+        "flight_duration": 407,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBkMzV5",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0d35y&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/01gznn",
+        "name": "Glacier National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 48.756063,
+          "longitude": -113.7797316
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsMh3klsvnVGAz3dzZLaMHi029od27z70CIAnaZ1qq2h-6vOwLo6IqFDrJ_13mXpsJd86ErMI38QXShNlYIPhlp-50TgrhoN4lZWhNYA",
+        "destination_airport": {
+          "code": "FCA",
+          "location": "Kalispell",
+          "location_id": "/m/0x1vt"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 482,
+        "hotel_price": 245,
+        "flight_duration": 216,
+        "number_of_stops": 1,
+        "airline": "American and Alaska",
+        "airline_code": "multi",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxZ3pubg",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F01gznn&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0lhn5",
+        "name": "Savannah",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 32.0808989,
+          "longitude": -81.091203
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ZdAU76v-frdvr-isrCstY-8DpZqEP3Bt_84GHkeWxizmtspFV3Z0vJncwATMOyjY9g1i6ZpunrWYqkRbNSk6ATf30XFmFALIrm_4Sg",
+        "destination_airport": {
+          "code": "SAV"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 377,
+        "hotel_price": 166,
+        "flight_duration": 151,
+        "number_of_stops": 0,
+        "airline": "American",
+        "airline_code": "AA",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBsaG41",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0lhn5&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0cnrr",
+        "name": "Grand Canyon National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 36.2678855,
+          "longitude": -112.3535253
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW4h72CI44tms7eyv4mvuqdaoDHoa2OBquS-Yg9zmxBu6UCAsYGqTSFWpAR5PU0nJlDLNmd5RIlACmRGU6TkXyafM5vG57CckP7InjYQ",
+        "destination_airport": {
+          "code": "LAS",
+          "location": "Las Vegas",
+          "location_id": "/m/0cv3w"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 204,
+        "flight_duration": 390,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "car_duration": 300,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBjbnJy",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0cnrr&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0n1rj",
+        "name": "Tampa",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 27.9516896,
+          "longitude": -82.4587527
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOnQ4SLeJ6rvncy6TM9KXTzObp3W6fobZgCHZCiXr6jqGl9FLcAUmqyvJjf6M3tAyq96hwIaSXec0UlqRbr3w339cc0anHQkA_UQ8MMA",
+        "destination_airport": {
+          "code": "TPA"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 175,
+        "flight_duration": 294,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBuMXJq",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0n1rj&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0gy14",
+        "name": "Acadia National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 44.3385559,
+          "longitude": -68.2733346
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSp-B2rNbwPJTFvZOY6I50Rl03Hki0xzhAf3cu8pMQxoqc6F6x6Jhxm6WxPJdDdLP4DOug9Xzp5SOtWk3ydGLvtVuxVK-idUFJqz14KCw",
+        "destination_airport": {
+          "code": "BGR",
+          "location": "Bangor",
+          "location_id": "/m/0tr3p"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 383,
+        "hotel_price": 241,
+        "flight_duration": 332,
+        "number_of_stops": 1,
+        "airline": "American",
+        "airline_code": "AA",
+        "car_duration": 90,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBneTE0",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0gy14&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0ny57",
+        "name": "Sedona",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 34.862614,
+          "longitude": -111.8137258
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrUPCRQFNHQAO3cqHN0v0EYfveI-Uq8ZZET3WFhDGL-K0ReSjXyMtFF1LmoN3zX4Z6qV3AjLxu_d6r2FIxEp3cJ6IGH2t7sbiC41A-cw",
+        "destination_airport": {
+          "code": "PHX",
+          "location": "Phoenix",
+          "location_id": "/m/0d35y"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 231,
+        "flight_duration": 407,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "car_duration": 120,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBueTU3",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0ny57&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/011ll4",
+        "name": "Lake Tahoe",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 39.0968493,
+          "longitude": -120.0323507
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOyBZc2FX-_-TDz_7YU6CVYbuW7R1nWjFD4JHmZzlrOnkgy8VaDPRWyiZ_oFa-MKBTs8RYelP0xQaSYA",
+        "destination_airport": {
+          "code": "RNO",
+          "location": "Reno",
+          "location_id": "/m/06kx2"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 264,
+        "hotel_price": 174,
+        "flight_duration": 1064,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "car_duration": 60,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxMWxsNA",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F011ll4&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0ydpd",
+        "name": "Asheville",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 35.5975104,
+          "longitude": -82.5460563
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQ7ZgSGr640hyrtlnlpztG-GnlAeHnhWeVnAyRpkVzYiOuBdv41Y7hK8uTf99U8Ge79Lg_j5ijt42scpiayOWswHMnInYwnGz5rhwnA",
+        "destination_airport": {
+          "code": "CLT",
+          "location": "Charlotte",
+          "location_id": "/m/0fsb8"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 239,
+        "hotel_price": 162,
+        "flight_duration": 792,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "car_duration": 150,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzB5ZHBk",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0ydpd&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0rj0z",
+        "name": "Fort Lauderdale",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 26.1224386,
+          "longitude": -80.1373174
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGUA9rFhtXj4X_bvaO_xWVrp6z-SwvEZLEtvwgYFJWyM7hAVl-2XcIvIQKijTZgfssNT5OkFP7iAye7vkmkP-QL671RNajzTMX4C6hKg",
+        "destination_airport": {
+          "code": "FLL"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 141,
+        "flight_duration": 480,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzByajB6",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0rj0z&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0lgt",
+        "name": "Arches National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 38.7328166,
+          "longitude": -109.5746222
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSi50Mv2NWElvFJZzAXghq2m5lcVmMX_GzIlz3Lyx6pAhVKJQQ_ihBYVYnEJhROKbnxFFAi5onryBM52a0wuvaHjYEasQ06fFe-XDtYIw",
+        "destination_airport": {
+          "code": "SLC",
+          "location": "Salt Lake City",
+          "location_id": "/m/0f2r6"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 168,
+        "hotel_price": 215,
+        "flight_duration": 190,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "car_duration": 240,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDSoLCAMSBy9tLzBsZ3Q",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0lgt&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0rp46",
+        "name": "Key West",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 24.5550593,
+          "longitude": -81.7799871
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoYB2Afxu8S4OgK498fWik9FjhEeP91eN3JUni8rtygCFIm247nE2Ii_0MsUkJU_397-79jgxCsSdH97jKmUJ4r02PmIS8iNx3t1zR6Q",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBycDQ2",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0rp46&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/06wxw",
+        "name": "St. Louis",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 38.627428,
+          "longitude": -90.1982439
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTm5EIlNrFutoEkhQH8N1azti53oHilYxZt7boDU_53GmLNDFPxjvGCQT6xPC9aWKzQDmJSGlJvxWpu0QgAPPvy3ov4vvRvgNPGFEu2Og",
+        "destination_airport": {
+          "code": "STL"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 179,
+        "hotel_price": 217,
+        "flight_duration": 609,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzA2d3h3",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F06wxw&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/01p_zv",
+        "name": "Rocky Mountain National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 40.3427932,
+          "longitude": -105.6836389
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-GxPm1lBQsIZoFivLPUtLAx7alh3c_Y9IvVMfrsWwzYtSIjGl6d12eDIdsDvmI_u2DBp00cdHkX4wY8fVXNjksmp-LEV2-fA01-d7RQ",
+        "destination_airport": {
+          "code": "DEN",
+          "location": "Denver",
+          "location_id": "/m/02cl1"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 198,
+        "hotel_price": 171,
+        "flight_duration": 135,
+        "number_of_stops": 0,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "car_duration": 90,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxcF96dg",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F01p_zv&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/094jv",
+        "name": "Baltimore",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 39.2905023,
+          "longitude": -76.6104072
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVbSvuQzxS9gWvhPMwASEAQ4pN9RC1bauyj3AOj6DuANiG8_DA5S-R5GgpEILE0I6PjHHPeHJ7Dv8pf9lVo_gKDKk0RGfOoec2EBcGIw",
+        "destination_airport": {
+          "code": "IAD",
+          "location": "Washington",
+          "location_id": "/m/0rh6k"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "flight_duration": 508,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "car_duration": 90,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzA5NGp2",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F094jv&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0r62v",
+        "name": "Santa Barbara",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 34.420285,
+          "longitude": -119.698935
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDVUmAzCFNn5ffTIXtxBs6cMqiJ3HpOIpP7KtHIqOVvoxM93d4DRFfqNU27M0aMbAuimHcjkIp8l31qI-T_WRKaA",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzByNjJ2",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0r62v&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/0fpzwf",
+        "name": "Minneapolis",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 44.977753,
+          "longitude": -93.2650108
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQO0efA67E50kWGwiZ-_cHbcWvrhgvbkighxB-5ks7gOV6zCp1_43S4OiYfe9fnKXM2uFIR7PLobsrNAFdJNtzmAS49O8Jipj3tsBwBxA",
+        "destination_airport": {
+          "code": "MSP"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 209,
+        "hotel_price": 182,
+        "flight_duration": 1445,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzBmcHp3Zg",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0fpzwf&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/01_yf9",
+        "name": "Great Smoky Mountains National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 35.6130503,
+          "longitude": -83.5531537
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX5vWhBahh8zT3akkX8bPEDydor9M4m4DrkEjAqEoGpdTNtuzjvqqmF8XksMGG5BSEouifbRLYCRnZcRuIAUlZnSCWoa2x3xUjAykXwg",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxX3lmOQ",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F01_yf9&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/02dtg",
+        "name": "Detroit",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 42.3297182,
+          "longitude": -83.0424533
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5QAjgb1ZVmPlgBCChjOHo0qGsyvTGS4KaZ0g7THCq2GjLghY26MMhVKeOiNt7AdxopetKVKGFP9E8yEVY4gV8oy1T5SkTuS7zmeU2TQ",
+        "destination_airport": {
+          "code": "DTW"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "hotel_price": 169,
+        "flight_duration": 377,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzAyZHRn",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F02dtg&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0cc65",
+        "name": "Grand Teton National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 43.7904282,
+          "longitude": -110.6817627
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_g9GdOGgHEGXxeNfGLTadZzQl2Pi3cOoSqoGPLxS_wXxLl8H51L3PdoFVWcGZnNl9A8VcBjLXqolaTAChZC0tiqEoqOh_qyQallJ4KQ",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBjYzY1",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0cc65&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/015nrn",
+        "name": "Olympic National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 47.8021067,
+          "longitude": -123.6043524
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKcm_0W5vu7Tu-3YfFSIIIy76lvVfKRdWgnM2S9jyd0NG3sWUZi79CIKY24vq2K05rSypmZ2oihK4Lz7wHgB5rR3nMEzIpUK-AyxJV6g",
+        "destination_airport": {
+          "code": "SEA",
+          "location": "Seattle",
+          "location_id": "/m/0d9jr"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 304,
+        "hotel_price": 253,
+        "flight_duration": 832,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "car_duration": 120,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxNW5ybg",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F015nrn&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0c_m3",
+        "name": "Memphis",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 35.1485812,
+          "longitude": -90.0518955
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCrSOvrTqF-B0PIexLF_OrJZ2GDz8Glr7Pn9n5-n6GjuiAItJyhVHlSOsVstigIVGttNGp1c0L2IEHB9OBGdndEL9sWZMPB6XyeF7TBA",
+        "destination_airport": {
+          "code": "MEM"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 296,
+        "hotel_price": 147,
+        "flight_duration": 595,
+        "number_of_stops": 1,
+        "airline": "Delta and Frontier",
+        "airline_code": "multi",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBjX20z",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0c_m3&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/04f_d",
+        "name": "Kansas City",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 39.0997265,
+          "longitude": -94.5785667
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4U73bHdjOvChXftJ34d6_sh62OM32F4QXTyo4CanrvgLTgJKFv1rtiJWrhai6wxHXinSULywjlXDB8n1u4ruQEJh68HSHoT57RycOxg",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzA0Zl9k",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F04f_d&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/0ftxw",
+        "name": "Indianapolis",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 39.76909,
+          "longitude": -86.158018
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMwg7y9UQF_BBMbeWG0FJkqCN2xlRQHPqQzkV1afaCTv9NaAdujXL6-yA1d4Gs26eNOYiyjVAl46esmP969PdnLmSFwyNO2g84L8pNZA",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBmdHh3",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0ftxw&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/018lc_",
+        "name": "Niagara Falls",
+        "country": "Canada",
+        "gps_coordinates": {
+          "latitude": 43.0895577,
+          "longitude": -79.0849436
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW8bSelNW4-R7LgSMdVZ8Qs_06h2qhWyI-gLMWogeOUvzjyTI9P5jqiYLog1cFb7Vv8tII6t-jJKX_FQkLEzra1sIegW0eQdHu4v-X-g",
+        "destination_airport": {
+          "code": "YYZ",
+          "location": "Toronto",
+          "location_id": "/m/0h7h6"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 553,
+        "hotel_price": 148,
+        "flight_duration": 183,
+        "number_of_stops": 0,
+        "airline": "American and Air Canada",
+        "airline_code": "multi",
+        "car_duration": 90,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxOGxjXw",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F018lc_&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0dyl9",
+        "name": "Milwaukee",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 43.0410344,
+          "longitude": -87.9096783
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwRKPuJ3bdjzpnU_on69_cpREz-RSY4zFhcL0Zh3vedttjU6WRqaDq9pnJlyZ3tYg4zOB_ZwwdpaXk9y4h4-hNgEybDgl1PP5Ud1B9Gw",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBkeWw5",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0dyl9&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/06_kh",
+        "name": "Santa Monica",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 34.0118828,
+          "longitude": -118.4915504
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmNnwn98FgIgHn5CJdLCFHuTSUt0KA9mOjEf9aPsrS4HH12DXF9OO_JXi4XpnwG_uAa9ZALwtBsSETh296YwkBmm5G6kaABHWlTtCzoA",
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "number_of_stops": 0,
+        "airline_code": "multi",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzA2X2to",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F06_kh&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/019fdr",
+        "name": "Badlands National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 43.8553804,
+          "longitude": -102.3396912
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD1bOGFt0VrtWVMXI2TRE19IS7zBP1NXuqyWBWD9GaXVQoqGDEmLno5EGFyFTqj-AzGnuopvvD6mO7Cw",
+        "destination_airport": {
+          "code": "RAP",
+          "location": "Rapid City",
+          "location_id": "/m/0_rwf"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 475,
+        "hotel_price": 212,
+        "flight_duration": 149,
+        "number_of_stops": 0,
+        "airline": "American",
+        "airline_code": "AA",
+        "car_duration": 60,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxOWZkcg",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F019fdr&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0jpy_",
+        "name": "Newport",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 41.491756,
+          "longitude": -71.3118637
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHOIWa5QP_CAXLuu0ya1t6TQyq2TUccqYpDFE4d6QHsGBem2YxROnbE0rA8KyQN84O189rdbqtHNH7BGY1E9ArdsFu-RkjyKzPPlaICA",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBqcHlf",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0jpy_&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/01smr6",
+        "name": "Big Bend National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 29.2498194,
+          "longitude": -103.2501636
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2xOXf6EY7bwsRT-Z4ZovHT0ijRwDpYbn4ksJv46em4bdusle6eGR8bbzX6PGiqbVros2b_F5HdNfUxgS2VHSdsEd_zDtguLhjoqzbNA",
+        "destination_airport": {
+          "code": "MAF",
+          "location": "Midland",
+          "location_id": "/m/013n2h"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 395,
+        "hotel_price": 168,
+        "flight_duration": 76,
+        "number_of_stops": 0,
+        "airline": "American",
+        "airline_code": "AA",
+        "car_duration": 180,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxc21yNg",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F01smr6&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0fw2y",
+        "name": "Madison",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 43.0721661,
+          "longitude": -89.4007501
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcWfcAgkUIS7gqe-kl8mLR7TFw_aWFh4ahYFasgHNtd7h1kSASthgZOgQpPjau1d5invesAVe8tOWc8zpK2J-9ZDGe4hQ2_CgMGwIUcQ",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBmdzJ5",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0fw2y&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/011gtj",
+        "name": "Jackson",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 43.4799291,
+          "longitude": -110.7624282
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJUhLdrQjl29BHrJofL_QXZ2gxgFXIYHU8KSRChpIoZeal07dpKsavSmnG_-78TXV1O-seyiSM4c-J5K2UTF7kMIAJSaqbnM44QVYEEg",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxMWd0ag",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F011gtj&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/0fvzg",
+        "name": "Oklahoma City",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 35.4688692,
+          "longitude": -97.519539
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSveVEcqt4BJ9KQp04_4CqEkHYkrU8poDNx_JsE_udWBBq0GXccTHJq8ItSUNvGKJVh7wDFc0HxBd86OPOwmH0-drM6w7AeF-ijVcY2Jg",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBmdnpn",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0fvzg&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/099ty",
+        "name": "Boise",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 43.6150186,
+          "longitude": -116.2023137
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd0kkpn67Rp_FZFMavMBCV13bvmce4rFXcQDOPbID8nPcuhwk4EIXNvq5TzVtTCJkmF3q01rjSvqeB_y4b47tU7fF23gfBvGW1DEgv7Q",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzA5OXR5",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F099ty&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/0rp8x",
+        "name": "Destin",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 30.389606,
+          "longitude": -86.4836234
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8ud8QunDkeAboOWQAb8T697nEN7opYlt4q78bfnooF9vvTYzzuhGh-FSxC0uNQNArgzehgG_5DxeqGv_TJpbtwGAHxcmLy-dKVTbPqg",
+        "destination_airport": {
+          "code": "VPS"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 437,
+        "hotel_price": 251,
+        "flight_duration": 120,
+        "number_of_stops": 0,
+        "airline": "American",
+        "airline_code": "AA",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBycDh4",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0rp8x&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/026b2l",
+        "name": "Saguaro National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 32.1830899,
+          "longitude": -110.6126823
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTsSAp0L9EGTCjkW86v-HCAe-F6OPnHJSnhGG9KPiMwyHEvrNGUn5p7h3T7SWdE3k71LyfCKyXENN4vO8qoVaQpqXtDWZfxVG5Pi3a8Q",
+        "destination_airport": {
+          "code": "TUS",
+          "location": "Tucson",
+          "location_id": "/m/0fr0t"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 440,
+        "hotel_price": 108,
+        "flight_duration": 139,
+        "number_of_stops": 0,
+        "airline": "American",
+        "airline_code": "AA",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAyNmIybA",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F026b2l&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/02g06k",
+        "name": "Bar Harbor",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 44.3875617,
+          "longitude": -68.2042989
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF9UTsOhKfjoa5GrpojXA2lRiYm-VfZUEcu2hWZEaybWYE5uk7kfLkMh_y5m_KH1nFoKL1EmusBKsxm2BuCtGmyQZACwsm_MLZVzizsA",
+        "destination_airport": {
+          "code": "BGR",
+          "location": "Bangor",
+          "location_id": "/m/0tr3p"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 383,
+        "flight_duration": 332,
+        "number_of_stops": 1,
+        "airline": "American",
+        "airline_code": "AA",
+        "car_duration": 90,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAyZzA2aw",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F02g06k&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0lphb",
+        "name": "Birmingham",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 33.5185892,
+          "longitude": -86.8103567
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2u180IbEsyXsJpxscCeptjv5DnqIwXfeJpiccB2m2dmvw9IoHIXKV4vW7mPzEkeTTluUlaC02PXJBbIs1jb7A5fLZKQS-wUmDg0Wf6A",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBscGhi",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0lphb&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/01ws_r",
+        "name": "White Sands National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 32.7872403,
+          "longitude": -106.3256816
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSK-9B_WFXStsyG-O5GTLbRxQin3o00xvw6q5UBR2ZfW-0Oe7olKGIrvSnkMZ2EyGsTvMpTMjeRteT39wypOX34GRjG1SVvE-w6ijBtHA",
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "number_of_stops": 0,
+        "airline_code": "multi",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxd3Nfcg",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F01ws_r&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0f2sq",
+        "name": "Galveston",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 29.3012309,
+          "longitude": -94.7950151
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN0i6Bz1QcbJiHxKeqiKTXqOoVL6wuJwvMGfvBqQOc4Qw2UC3aEv9tone7unWxIxOCLrFhgNlCNraLoiZhDzhNJdOvTZZXuiIP_DCNHw",
+        "destination_airport": {
+          "code": "IAH",
+          "location": "Houston",
+          "location_id": "/m/03l2n"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 224,
+        "flight_duration": 716,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "car_duration": 90,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBmMnNx",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0f2sq&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0281q55",
+        "name": "Carlsbad Caverns National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 32.137045,
+          "longitude": -104.5437529
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8Hvb_izGjuLLs6C672MgwwKhm1v0I7tKhz6e40M1pTCwEN8qzSnaYU5rO5wBGZvDB55N4oVaE8tMvJf9ljkI4Fp7d8LE0NDe_77QzPg",
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "number_of_stops": 0,
+        "airline_code": "multi",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBECoOCAMSCi9tLzAyODFxNTU",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0281q55&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0c805",
+        "name": "North Cascades National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 48.7718174,
+          "longitude": -121.2984648
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0FL9w7hS42mx-SCJeK_Z5jU2xCsyXlwijoUvQpTfQubOVJQqTHzHs2sRXpNgrEd_lkAat6mgm5ec0xIm9FGpGRWZUKpWAtzRTC1zaGA",
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "number_of_stops": 0,
+        "airline_code": "multi",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBjODA1",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0c805&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/0b2lw",
+        "name": "Saint Paul",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 44.9537029,
+          "longitude": -93.0899578
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaURj1eJRrnx3e4Lq8E39oMbjen6W082LRS3oRYdGH7NSiFdp8GiomIDe-HeG6wWhxj0p-I6bFyfBhzocXQs1Iqoj-jOb1smkCH2LdPA",
+        "destination_airport": {
+          "code": "MSP",
+          "location": "Minneapolis",
+          "location_id": "/m/0fpzwf"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 209,
+        "hotel_price": 150,
+        "flight_duration": 1445,
+        "number_of_stops": 1,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzBiMmx3",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0b2lw&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/010v8k",
+        "name": "Spokane",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 47.6579711,
+          "longitude": -117.4235319
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFn5bdcpTXkyJ4Yu66GK84TNO89xqQsFMfX51k1qTT7_zGtvl65UIaNgyKY2VaiX3xHV2QPP-b0iGwC-RLSItsSuY8o_wu94RKGhQh1Q",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxMHY4aw",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F010v8k&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/02j3w",
+        "name": "Des Moines",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 41.5896139,
+          "longitude": -93.6163963
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrFeQc68JjqSYJZkTYeSmo4g4Z_8rB2rWB469RbTBsCOlKUFUGAlmst15s98CI-gmc6LQLbv3pyv6luq9vJMFuMdWllvYeXlle6aNo-A",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzAyajN3",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F02j3w&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/0x1y7",
+        "name": "Bozeman",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 45.6793119,
+          "longitude": -111.037259
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAMfjkrYMNCLnUYNB7MD-cwyfYNu9qOJzkn0wPQ4Sk5Z_cDMcsvi6StRZIADVoK29ZFPlVKeRpm0OoRlsz9NJD85WRGcsWP4GX5b0Sg",
+        "destination_airport": {
+          "code": "BZN"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 396,
+        "flight_duration": 292,
+        "number_of_stops": 1,
+        "airline": "United",
+        "airline_code": "UA",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzB4MXk3",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0x1y7&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/038y7y",
+        "name": "Wind Cave National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 43.5724388,
+          "longitude": -103.4415644
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQCzTQTXwKZYyZqK8pg7XHhyojQznySFwb5-NraAFzS0el5E3rlDFH5cJrajkdf6cdfq4XFri23jag0bpWTq4x1cHXCDiGPlnspPjZq1g",
+        "destination_airport": {
+          "code": "DEN",
+          "location": "Denver",
+          "location_id": "/m/02cl1"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 198,
+        "hotel_price": 188,
+        "flight_duration": 135,
+        "number_of_stops": 0,
+        "airline": "Frontier",
+        "airline_code": "F9",
+        "car_duration": 360,
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAzOHk3eQ",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F038y7y&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/038xsf",
+        "name": "Theodore Roosevelt National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 46.9508897,
+          "longitude": -103.4627031
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHiaBOs_itm1sz77IZFpC2raYO1Vv39GVpbDpo_ZsYNrAIMkH5YaSyainGDj0tWuxQGtUZfKhSf39cxXJ_kqA7oERBLq7Nv7mvVxFBjg",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAzOHhzZg",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F038xsf&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/0tbql",
+        "name": "Wichita",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 37.693452,
+          "longitude": -97.3382202
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVD65ytCRdQGQ8sFGJsWK_9mz13n9HPZWxcpx4UTNwokeG3JAgSCod5NgSwGl0dc2h6NM_c1E4SkJO-DnqE5oP5wtYHaNmVfWIIPVXQ",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDioMCAMSCC9tLzB0YnFs",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F0tbql&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/02n49j",
+        "name": "Mazatl\u00e1n",
+        "country": "Mexico",
+        "gps_coordinates": {
+          "latitude": 23.2494148,
+          "longitude": -106.4111425
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBs0I8zYEbU6vmnxtDheAjL88S9qbKM-9FD9Sv78tuAQV26EZ6w2DGLUmJEN35xbygWRAvLBqv-VQLiknIx-kvnVxM7ZLwOm0Eurc-kg",
+        "destination_airport": {
+          "code": "MZT"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 738,
+        "hotel_price": 71,
+        "flight_duration": 152,
+        "number_of_stops": 0,
+        "airline": "American",
+        "airline_code": "AA",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAybjQ5ag",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F02n49j&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/038xwg",
+        "name": "Voyageurs National Park",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 48.4711276,
+          "longitude": -92.8458393
+        },
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRg8p1Snj7C8PFRZXkyMeaALAvfRY3SHR29g5zcGwSLlbfta1sYZ2TQ0jdf4-LfG57hKfmBZDdGBCZZZTAG06vvl9WV08-ExYtTXX8uBg",
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "number_of_stops": 0,
+        "airline_code": "multi",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAzOHh3Zw",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F038xwg&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/01187m7x",
+        "name": "South Padre Island",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 26.1118401,
+          "longitude": -97.1681257
+        },
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNRbDw7rNHNwD1pZXp27wxBL8UU-F5yAvugr_3stVwBaLhYDeA5uAEIQi75TrHop-2IkyRj7ceATL8f82rdIqZmD_exnAHsBcc0TPlrg",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBESoPCAMSCy9tLzAxMTg3bTd4",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F01187m7x&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/013n60",
+        "name": "Amarillo",
+        "country": "United States",
+        "gps_coordinates": {
+          "latitude": 35.2069816,
+          "longitude": -101.8320065
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3n_b-_x7O-K3SY4WoJIuvx8UZszd94_itwLy-zdNaG5iYSXw4FbDEMjRJx6NqTggYpkXVNPJTtxRdx0-CydaijJKLin6L9ZF6AbIV3g",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoJagcIARIDREZXGglyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAxM242MA",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F013n60&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en"
+      },
+      {
+        "destination_id": "/m/02dfbn",
+        "name": "La Paz",
+        "country": "Mexico",
+        "gps_coordinates": {
+          "latitude": 24.1426408,
+          "longitude": -110.3127531
+        },
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdwFgn5gYI8IOIQHSzrfbJ7BvIrUU1vA_lBQEEopfObZyrbxAxX2r1GDWdZAHNBvDvLLqJh7IW1jSTuvs0FaNsDiJkSKONq56dsdUgcw",
+        "destination_airport": {
+          "code": "LAP"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 947,
+        "hotel_price": 115,
+        "flight_duration": 2635,
+        "number_of_stops": 2,
+        "airline": "Alaska",
+        "airline_code": "AS",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzAyZGZibg",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F02dfbn&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      },
+      {
+        "destination_id": "/m/04x5l8",
+        "name": "Loreto",
+        "country": "Mexico",
+        "gps_coordinates": {
+          "latitude": 26.0117564,
+          "longitude": -111.3477531
+        },
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4R0mISbHhpvCjCCFaSYjRi3hOOYGiaMcFwglLlmm9GFyuh7XfpYAwMPdPtVtnxn1pVZ2OWf9mkIUrv1PVf0vLulWQ06RdEscXi0ZP5Q",
+        "destination_airport": {
+          "code": "LTO"
+        },
+        "start_date": "2026-06-03",
+        "end_date": "2026-06-06",
+        "flight_price": 788,
+        "hotel_price": 136,
+        "flight_duration": 1466,
+        "number_of_stops": 1,
+        "airline": "American",
+        "airline_code": "AA",
+        "link": "https://www.google.com/travel/explore?hl=en&gl=us&curr=USD&tfs=CBwQAxoVEgoyMDI2LTA2LTAzagcIARIDREZXGhUSCjIwMjYtMDYtMDZyBwgBEgNERldAAUgBcAGCAQsI____________AZgBAbIBDyoNCAMSCS9tLzA0eDVsOA",
+        "serpapi_link": "https://serpapi.com/search.json?arrival_id=%2Fm%2F04x5l8&currency=USD&departure_id=DFW&engine=google_travel_explore&gl=us&hl=en&outbound_date=2026-06-03&return_date=2026-06-06"
+      }
+    ]
+  }
+}

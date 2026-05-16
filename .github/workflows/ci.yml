@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      - name: Validate app syntax
+        run: uv run python -m py_compile app.py
+
+      - name: Smoke test app import
+        run: uv run python -c "import app; print('app import smoke test passed')"
+
+      - name: Validate demo presets JSON
+        run: uv run python -c "import json; json.load(open('demo_presets.json')); print('demo presets valid')"
+
+      - name: Check Streamlit Cloud requirements export
+        run: uv pip compile pyproject.toml -o /tmp/compiled-requirements.txt
+
+      - name: Ensure requirements.txt is in sync
+        run: diff -u requirements.txt /tmp/compiled-requirements.txt

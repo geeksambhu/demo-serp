@@ -1,0 +1,1260 @@
+{
+  "cache_version": 1,
+  "captured_at": "2026-05-16",
+  "search_phrase": "Show me a 3-day Los Angeles trip from Austin under $350",
+  "trip_mode": "Specific destination",
+  "search_params": {
+    "engine": "google_flights",
+    "departure_id": "AUS",
+    "outbound_date": "2026-06-06",
+    "return_date": "2026-06-09",
+    "currency": "USD",
+    "hl": "en",
+    "arrival_id": "LAX"
+  },
+  "raw_response": {
+    "search_metadata": {
+      "id": "6a0802193d3656e4d150f5ed",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/Iqi33v4MewK6ZFInJLecug/6a0802193d3656e4d150f5ed.json",
+      "created_at": "2026-05-16 05:35:21 UTC",
+      "processed_at": "2026-05-16 05:35:21 UTC",
+      "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhoeEgoyMDI2LTA2LTA2agcIARIDQVVTcgcIARIDTEFYGh4SCjIwMjYtMDYtMDlqBwgBEgNMQVhyBwgBEgNBVVNAAUgBcAGYAQE&tfu=EgIIAQ",
+      "raw_html_file": "https://serpapi.com/searches/Iqi33v4MewK6ZFInJLecug/6a0802193d3656e4d150f5ed.html",
+      "prettify_html_file": "https://serpapi.com/searches/Iqi33v4MewK6ZFInJLecug/6a0802193d3656e4d150f5ed.prettify",
+      "total_time_taken": 0.57
+    },
+    "search_parameters": {
+      "engine": "google_flights",
+      "hl": "en",
+      "gl": "us",
+      "departure_id": "AUS",
+      "arrival_id": "LAX",
+      "outbound_date": "2026-06-06",
+      "return_date": "2026-06-09",
+      "currency": "USD"
+    },
+    "best_flights": [
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 06:10"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 07:15"
+            },
+            "duration": 185,
+            "airplane": "Boeing 737MAX 8 Passenger",
+            "airline": "Southwest",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+            "travel_class": "Economy",
+            "flight_number": "WN 332",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "In-seat USB outlet",
+              "Stream media to your device",
+              "Carbon emissions estimate: 143 kg"
+            ]
+          }
+        ],
+        "total_duration": 185,
+        "carbon_emissions": {
+          "this_flight": 144000,
+          "typical_for_this_route": 223000,
+          "difference_percent": -35
+        },
+        "price": 300,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZ1ZYVGpNek1ob0xDT0RwQVJBQ0dnTlZVMFE0SEhEZzZRRT0iLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJMQVgiLG51bGwsIldOIiwiMzMyIl1dXQ=="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 07:25"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 08:46"
+            },
+            "duration": 201,
+            "airplane": "Boeing 737",
+            "airline": "Delta",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+            "travel_class": "Economy",
+            "flight_number": "DL 306",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "In-seat power & USB outlets",
+              "Live TV",
+              "Carbon emissions estimate: 178 kg"
+            ]
+          }
+        ],
+        "total_duration": 201,
+        "carbon_emissions": {
+          "this_flight": 179000,
+          "typical_for_this_route": 223000,
+          "difference_percent": -20
+        },
+        "price": 334,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZ1ZFVERNd05ob0xDT1NFQWhBQ0dnTlZVMFE0SEhEa2hBST0iLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJMQVgiLG51bGwsIkRMIiwiMzA2Il1dXQ=="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 07:06"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 08:35"
+            },
+            "duration": 209,
+            "airplane": "Embraer 175",
+            "airline": "American",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+            "travel_class": "Economy",
+            "flight_number": "AA 6185",
+            "ticket_also_sold_by": [
+              "Alaska"
+            ],
+            "legroom": "30 in",
+            "extensions": [
+              "Average legroom (30 in)",
+              "Free Wi-Fi",
+              "In-seat power & USB outlets",
+              "Stream media to your device",
+              "Carbon emissions estimate: 234 kg"
+            ],
+            "plane_and_crew_by": "SkyWest Airlines as American Eagle"
+          }
+        ],
+        "total_duration": 209,
+        "carbon_emissions": {
+          "this_flight": 234000,
+          "typical_for_this_route": 223000,
+          "difference_percent": 5
+        },
+        "price": 337,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZ1pCUVRZeE9EVWFDd2pDaGdJUUFob0RWVk5FT0J4d3dvWUMiLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJMQVgiLG51bGwsIkFBIiwiNjE4NSJdXV0="
+      }
+    ],
+    "other_flights": [
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 14:28"
+            },
+            "arrival_airport": {
+              "name": "Denver International Airport",
+              "id": "DEN",
+              "time": "2026-06-06 16:10"
+            },
+            "duration": 162,
+            "airplane": "Airbus A321",
+            "airline": "Frontier",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/F9.png",
+            "travel_class": "Economy",
+            "flight_number": "F9 1859",
+            "legroom": "28 in",
+            "extensions": [
+              "Below average legroom (28 in)",
+              "Carbon emissions estimate: 108 kg"
+            ]
+          },
+          {
+            "departure_airport": {
+              "name": "Denver International Airport",
+              "id": "DEN",
+              "time": "2026-06-06 22:39"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-07 00:16"
+            },
+            "duration": 157,
+            "airplane": "Airbus A321",
+            "airline": "Frontier",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/F9.png",
+            "travel_class": "Economy",
+            "flight_number": "F9 4345",
+            "legroom": "28 in",
+            "extensions": [
+              "Below average legroom (28 in)",
+              "Carbon emissions estimate: 122 kg"
+            ]
+          }
+        ],
+        "layovers": [
+          {
+            "duration": 389,
+            "name": "Denver International Airport",
+            "id": "DEN"
+          }
+        ],
+        "total_duration": 708,
+        "carbon_emissions": {
+          "this_flight": 231000,
+          "typical_for_this_route": 223000,
+          "difference_percent": 4
+        },
+        "price": 284,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/F9.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZzFHT1RFNE5UbDhSamswTXpRMUdnc0k3TjBCRUFJYUExVlRSRGdjY096ZEFRPT0iLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJERU4iLG51bGwsIkY5IiwiMTg1OSJdLFsiREVOIiwiMjAyNi0wNi0wNiIsIkxBWCIsbnVsbCwiRjkiLCI0MzQ1Il1dXQ=="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 21:13"
+            },
+            "arrival_airport": {
+              "name": "Denver International Airport",
+              "id": "DEN",
+              "time": "2026-06-06 23:01"
+            },
+            "duration": 168,
+            "airplane": "Airbus A321",
+            "airline": "Frontier",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/F9.png",
+            "travel_class": "Economy",
+            "flight_number": "F9 2047",
+            "legroom": "28 in",
+            "extensions": [
+              "Below average legroom (28 in)",
+              "Carbon emissions estimate: 108 kg"
+            ]
+          },
+          {
+            "departure_airport": {
+              "name": "Denver International Airport",
+              "id": "DEN",
+              "time": "2026-06-07 07:00"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-07 08:35"
+            },
+            "duration": 155,
+            "airplane": "Airbus A320neo",
+            "airline": "Frontier",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/F9.png",
+            "travel_class": "Economy",
+            "flight_number": "F9 3155",
+            "legroom": "28 in",
+            "extensions": [
+              "Below average legroom (28 in)",
+              "Carbon emissions estimate: 103 kg"
+            ]
+          }
+        ],
+        "layovers": [
+          {
+            "duration": 479,
+            "name": "Denver International Airport",
+            "id": "DEN",
+            "overnight": true
+          }
+        ],
+        "total_duration": 802,
+        "carbon_emissions": {
+          "this_flight": 212000,
+          "typical_for_this_route": 223000,
+          "difference_percent": -5
+        },
+        "price": 284,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/F9.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZzFHT1RJd05EZDhSamt6TVRVMUdnc0k3TjBCRUFJYUExVlRSRGdjY096ZEFRPT0iLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJERU4iLG51bGwsIkY5IiwiMjA0NyJdLFsiREVOIiwiMjAyNi0wNi0wNyIsIkxBWCIsbnVsbCwiRjkiLCIzMTU1Il1dXQ=="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 19:25"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 20:30"
+            },
+            "duration": 185,
+            "airplane": "Boeing 737MAX 8 Passenger",
+            "airline": "Southwest",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+            "travel_class": "Economy",
+            "flight_number": "WN 3932",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "In-seat USB outlet",
+              "Stream media to your device",
+              "Carbon emissions estimate: 143 kg"
+            ]
+          }
+        ],
+        "total_duration": 185,
+        "carbon_emissions": {
+          "this_flight": 144000,
+          "typical_for_this_route": 223000,
+          "difference_percent": -35
+        },
+        "price": 300,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZ1pYVGpNNU16SWFDd2pnNlFFUUFob0RWVk5FT0J4dzRPa0IiLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJMQVgiLG51bGwsIldOIiwiMzkzMiJdXV0="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 06:40"
+            },
+            "arrival_airport": {
+              "name": "Phoenix Sky Harbor International Airport",
+              "id": "PHX",
+              "time": "2026-06-06 07:00"
+            },
+            "duration": 140,
+            "airplane": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "Southwest",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+            "travel_class": "Economy",
+            "flight_number": "WN 2120",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "Stream media to your device",
+              "Carbon emissions estimate: 161 kg"
+            ]
+          },
+          {
+            "departure_airport": {
+              "name": "Phoenix Sky Harbor International Airport",
+              "id": "PHX",
+              "time": "2026-06-06 07:45"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 09:10"
+            },
+            "duration": 85,
+            "airplane": "Boeing 737",
+            "airline": "Southwest",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+            "travel_class": "Economy",
+            "flight_number": "WN 1263",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "In-seat USB outlet",
+              "Stream media to your device",
+              "Carbon emissions estimate: 73 kg"
+            ]
+          }
+        ],
+        "layovers": [
+          {
+            "duration": 45,
+            "name": "Phoenix Sky Harbor International Airport",
+            "id": "PHX"
+          }
+        ],
+        "total_duration": 270,
+        "carbon_emissions": {
+          "this_flight": 235000,
+          "typical_for_this_route": 223000,
+          "difference_percent": 5
+        },
+        "price": 309,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZzFYVGpJeE1qQjhWMDR4TWpZekdnc0l0UEVCRUFJYUExVlRSRGdjY0xUeEFRPT0iLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJQSFgiLG51bGwsIldOIiwiMjEyMCJdLFsiUEhYIiwiMjAyNi0wNi0wNiIsIkxBWCIsbnVsbCwiV04iLCIxMjYzIl1dXQ=="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 07:15"
+            },
+            "arrival_airport": {
+              "name": "St. Louis Lambert International Airport",
+              "id": "STL",
+              "time": "2026-06-06 09:15"
+            },
+            "duration": 120,
+            "airplane": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "Southwest",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+            "travel_class": "Economy",
+            "flight_number": "WN 408",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "Stream media to your device",
+              "Carbon emissions estimate: 142 kg"
+            ]
+          },
+          {
+            "departure_airport": {
+              "name": "St. Louis Lambert International Airport",
+              "id": "STL",
+              "time": "2026-06-06 10:00"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 11:55"
+            },
+            "duration": 235,
+            "airplane": "Boeing 737MAX 8 Passenger",
+            "airline": "Southwest",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+            "travel_class": "Economy",
+            "flight_number": "WN 1874",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "In-seat USB outlet",
+              "Stream media to your device",
+              "Carbon emissions estimate: 173 kg"
+            ]
+          }
+        ],
+        "layovers": [
+          {
+            "duration": 45,
+            "name": "St. Louis Lambert International Airport",
+            "id": "STL"
+          }
+        ],
+        "total_duration": 400,
+        "carbon_emissions": {
+          "this_flight": 316000,
+          "typical_for_this_route": 223000,
+          "difference_percent": 42
+        },
+        "price": 309,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZ3hYVGpRd09IeFhUakU0TnpRYUN3aTA4UUVRQWhvRFZWTkVPQnh3dFBFQiIsW1siQVVTIiwiMjAyNi0wNi0wNiIsIlNUTCIsbnVsbCwiV04iLCI0MDgiXSxbIlNUTCIsIjIwMjYtMDYtMDYiLCJMQVgiLG51bGwsIldOIiwiMTg3NCJdXV0="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 09:15"
+            },
+            "arrival_airport": {
+              "name": "Kansas City International Airport",
+              "id": "MCI",
+              "time": "2026-06-06 11:10"
+            },
+            "duration": 115,
+            "airplane": "Boeing 737MAX 8 Passenger",
+            "airline": "Southwest",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+            "travel_class": "Economy",
+            "flight_number": "WN 4941",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "In-seat USB outlet",
+              "Stream media to your device",
+              "Carbon emissions estimate: 101 kg"
+            ]
+          },
+          {
+            "departure_airport": {
+              "name": "Kansas City International Airport",
+              "id": "MCI",
+              "time": "2026-06-06 12:15"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 13:40"
+            },
+            "duration": 205,
+            "airplane": "Boeing 737",
+            "airline": "Southwest",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+            "travel_class": "Economy",
+            "flight_number": "WN 3875",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "In-seat USB outlet",
+              "Stream media to your device",
+              "Carbon emissions estimate: 178 kg"
+            ]
+          }
+        ],
+        "layovers": [
+          {
+            "duration": 65,
+            "name": "Kansas City International Airport",
+            "id": "MCI"
+          }
+        ],
+        "total_duration": 385,
+        "carbon_emissions": {
+          "this_flight": 280000,
+          "typical_for_this_route": 223000,
+          "difference_percent": 26
+        },
+        "price": 309,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZzFYVGpRNU5ERjhWMDR6T0RjMUdnc0l0UEVCRUFJYUExVlRSRGdjY0xUeEFRPT0iLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJNQ0kiLG51bGwsIldOIiwiNDk0MSJdLFsiTUNJIiwiMjAyNi0wNi0wNiIsIkxBWCIsbnVsbCwiV04iLCIzODc1Il1dXQ=="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 19:35"
+            },
+            "arrival_airport": {
+              "name": "Phoenix Sky Harbor International Airport",
+              "id": "PHX",
+              "time": "2026-06-06 20:00"
+            },
+            "duration": 145,
+            "airplane": "Boeing 737",
+            "airline": "Southwest",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+            "travel_class": "Economy",
+            "flight_number": "WN 4426",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "In-seat USB outlet",
+              "Stream media to your device",
+              "Carbon emissions estimate: 138 kg"
+            ]
+          },
+          {
+            "departure_airport": {
+              "name": "Phoenix Sky Harbor International Airport",
+              "id": "PHX",
+              "time": "2026-06-06 20:50"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 22:15"
+            },
+            "duration": 85,
+            "airplane": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "Southwest",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+            "travel_class": "Economy",
+            "flight_number": "WN 1100",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "Stream media to your device",
+              "Carbon emissions estimate: 86 kg"
+            ]
+          }
+        ],
+        "layovers": [
+          {
+            "duration": 50,
+            "name": "Phoenix Sky Harbor International Airport",
+            "id": "PHX"
+          }
+        ],
+        "total_duration": 280,
+        "carbon_emissions": {
+          "this_flight": 225000,
+          "typical_for_this_route": 223000,
+          "difference_percent": 1
+        },
+        "price": 309,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WN.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZzFYVGpRME1qWjhWMDR4TVRBd0dnc0l0UEVCRUFJYUExVlRSRGdjY0xUeEFRPT0iLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJQSFgiLG51bGwsIldOIiwiNDQyNiJdLFsiUEhYIiwiMjAyNi0wNi0wNiIsIkxBWCIsbnVsbCwiV04iLCIxMTAwIl1dXQ=="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 13:21"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 14:46"
+            },
+            "duration": 205,
+            "airplane": "Airbus A319",
+            "airline": "Delta",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+            "travel_class": "Economy",
+            "flight_number": "DL 946",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "In-seat power & USB outlets",
+              "Live TV",
+              "Carbon emissions estimate: 189 kg"
+            ]
+          }
+        ],
+        "total_duration": 205,
+        "carbon_emissions": {
+          "this_flight": 190000,
+          "typical_for_this_route": 223000,
+          "difference_percent": -15
+        },
+        "price": 334,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZ1ZFVERrME5ob0xDT1NFQWhBQ0dnTlZVMFE0SEhEa2hBST0iLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJMQVgiLG51bGwsIkRMIiwiOTQ2Il1dXQ=="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 17:35"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 18:55"
+            },
+            "duration": 200,
+            "airplane": "Boeing 737",
+            "airline": "Delta",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+            "travel_class": "Economy",
+            "flight_number": "DL 986",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "In-seat power & USB outlets",
+              "Live TV",
+              "Carbon emissions estimate: 178 kg"
+            ]
+          }
+        ],
+        "total_duration": 200,
+        "carbon_emissions": {
+          "this_flight": 179000,
+          "typical_for_this_route": 223000,
+          "difference_percent": -20
+        },
+        "price": 334,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZ1ZFVERrNE5ob0xDT1NFQWhBQ0dnTlZVMFE0SEhEa2hBST0iLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJMQVgiLG51bGwsIkRMIiwiOTg2Il1dXQ=="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 20:59"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 22:15"
+            },
+            "duration": 196,
+            "airplane": "Boeing 737",
+            "airline": "American",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+            "travel_class": "Economy",
+            "flight_number": "AA 1291",
+            "ticket_also_sold_by": [
+              "Alaska"
+            ],
+            "legroom": "30 in",
+            "extensions": [
+              "Average legroom (30 in)",
+              "Free Wi-Fi",
+              "In-seat power & USB outlets",
+              "Stream media to your device",
+              "Carbon emissions estimate: 171 kg"
+            ],
+            "often_delayed_by_over_30_min": true
+          }
+        ],
+        "total_duration": 196,
+        "carbon_emissions": {
+          "this_flight": 172000,
+          "typical_for_this_route": 223000,
+          "difference_percent": -23
+        },
+        "price": 334,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZ1pCUVRFeU9URWFDd2praEFJUUFob0RWVk5FT0J4dzVJUUMiLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJMQVgiLG51bGwsIkFBIiwiMTI5MSJdXV0="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 17:10"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 18:40"
+            },
+            "duration": 210,
+            "airplane": "Embraer 175",
+            "airline": "United",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+            "travel_class": "Economy",
+            "flight_number": "UA 5632",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "In-seat power outlet",
+              "Stream media to your device",
+              "Carbon emissions estimate: 259 kg"
+            ],
+            "plane_and_crew_by": "SkyWest DBA United Express"
+          }
+        ],
+        "total_duration": 210,
+        "carbon_emissions": {
+          "this_flight": 259000,
+          "typical_for_this_route": 223000,
+          "difference_percent": 16
+        },
+        "price": 355,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZ1pWUVRVMk16SWFDd2pybEFJUUFob0RWVk5FT0J4dzY1UUMiLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJMQVgiLG51bGwsIlVBIiwiNTYzMiJdXV0="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 06:00"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 07:40"
+            },
+            "duration": 220,
+            "airplane": "Embraer 175",
+            "airline": "United",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+            "travel_class": "Economy",
+            "flight_number": "UA 4642",
+            "legroom": "31 in",
+            "extensions": [
+              "Average legroom (31 in)",
+              "Free Wi-Fi",
+              "In-seat power outlet",
+              "Stream media to your device",
+              "Carbon emissions estimate: 259 kg"
+            ],
+            "plane_and_crew_by": "SkyWest DBA United Express"
+          }
+        ],
+        "total_duration": 220,
+        "carbon_emissions": {
+          "this_flight": 259000,
+          "typical_for_this_route": 223000,
+          "difference_percent": 16
+        },
+        "price": 382,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZ1pWUVRRMk5ESWFDd2pxcVFJUUFob0RWVk5FT0J4dzZxa0MiLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJMQVgiLG51bGwsIlVBIiwiNDY0MiJdXV0="
+      },
+      {
+        "flights": [
+          {
+            "departure_airport": {
+              "name": "Austin-Bergstrom International Airport",
+              "id": "AUS",
+              "time": "2026-06-06 15:14"
+            },
+            "arrival_airport": {
+              "name": "Los Angeles International Airport",
+              "id": "LAX",
+              "time": "2026-06-06 16:40"
+            },
+            "duration": 206,
+            "airplane": "Embraer 175",
+            "airline": "American",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+            "travel_class": "Economy",
+            "flight_number": "AA 6409",
+            "ticket_also_sold_by": [
+              "Alaska"
+            ],
+            "legroom": "30 in",
+            "extensions": [
+              "Average legroom (30 in)",
+              "Free Wi-Fi",
+              "In-seat power & USB outlets",
+              "Stream media to your device",
+              "Carbon emissions estimate: 234 kg"
+            ],
+            "plane_and_crew_by": "SkyWest Airlines as American Eagle"
+          }
+        ],
+        "total_duration": 206,
+        "carbon_emissions": {
+          "this_flight": 234000,
+          "typical_for_this_route": 223000,
+          "difference_percent": 5
+        },
+        "price": 436,
+        "type": "Round trip",
+        "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+        "extensions": [
+          "Checked baggage for a fee",
+          "Bag and fare conditions depend on the return flight"
+        ],
+        "departure_token": "WyJDalJJUlRCTmJEZEJkV3hmVGsxQlIwMWZXR2RDUnkwdExTMHRMUzB0TFhaMGRHMHhNRUZCUVVGQlIyOUpRV2hyU21ONlNqQkJFZ1pCUVRZME1Ea2FDd2pRMUFJUUFob0RWVk5FT0J4dzBOUUMiLFtbIkFVUyIsIjIwMjYtMDYtMDYiLCJMQVgiLG51bGwsIkFBIiwiNjQwOSJdXV0="
+      }
+    ],
+    "price_insights": {
+      "lowest_price": 284,
+      "price_level": "high",
+      "typical_price_range": [
+        190,
+        260
+      ],
+      "price_history": [
+        [
+          1773637200,
+          250
+        ],
+        [
+          1773723600,
+          250
+        ],
+        [
+          1773810000,
+          250
+        ],
+        [
+          1773896400,
+          250
+        ],
+        [
+          1773982800,
+          210
+        ],
+        [
+          1774069200,
+          230
+        ],
+        [
+          1774155600,
+          220
+        ],
+        [
+          1774242000,
+          218
+        ],
+        [
+          1774328400,
+          210
+        ],
+        [
+          1774414800,
+          210
+        ],
+        [
+          1774501200,
+          210
+        ],
+        [
+          1774587600,
+          210
+        ],
+        [
+          1774674000,
+          210
+        ],
+        [
+          1774760400,
+          210
+        ],
+        [
+          1774846800,
+          210
+        ],
+        [
+          1774933200,
+          210
+        ],
+        [
+          1775019600,
+          210
+        ],
+        [
+          1775106000,
+          210
+        ],
+        [
+          1775192400,
+          230
+        ],
+        [
+          1775278800,
+          230
+        ],
+        [
+          1775365200,
+          230
+        ],
+        [
+          1775451600,
+          230
+        ],
+        [
+          1775538000,
+          210
+        ],
+        [
+          1775624400,
+          210
+        ],
+        [
+          1775710800,
+          210
+        ],
+        [
+          1775797200,
+          210
+        ],
+        [
+          1775883600,
+          210
+        ],
+        [
+          1775970000,
+          210
+        ],
+        [
+          1776056400,
+          210
+        ],
+        [
+          1776142800,
+          210
+        ],
+        [
+          1776229200,
+          210
+        ],
+        [
+          1776315600,
+          210
+        ],
+        [
+          1776402000,
+          230
+        ],
+        [
+          1776488400,
+          230
+        ],
+        [
+          1776574800,
+          211
+        ],
+        [
+          1776661200,
+          210
+        ],
+        [
+          1776747600,
+          210
+        ],
+        [
+          1776834000,
+          210
+        ],
+        [
+          1776920400,
+          210
+        ],
+        [
+          1777006800,
+          210
+        ],
+        [
+          1777093200,
+          210
+        ],
+        [
+          1777179600,
+          210
+        ],
+        [
+          1777266000,
+          210
+        ],
+        [
+          1777352400,
+          210
+        ],
+        [
+          1777438800,
+          210
+        ],
+        [
+          1777525200,
+          210
+        ],
+        [
+          1777611600,
+          210
+        ],
+        [
+          1777698000,
+          210
+        ],
+        [
+          1777784400,
+          210
+        ],
+        [
+          1777870800,
+          210
+        ],
+        [
+          1777957200,
+          224
+        ],
+        [
+          1778043600,
+          224
+        ],
+        [
+          1778130000,
+          224
+        ],
+        [
+          1778216400,
+          224
+        ],
+        [
+          1778302800,
+          254
+        ],
+        [
+          1778389200,
+          254
+        ],
+        [
+          1778475600,
+          254
+        ],
+        [
+          1778562000,
+          264
+        ],
+        [
+          1778648400,
+          271
+        ],
+        [
+          1778734800,
+          277
+        ],
+        [
+          1778821200,
+          281
+        ],
+        [
+          1778907600,
+          284
+        ]
+      ]
+    },
+    "airports": [
+      {
+        "departure": [
+          {
+            "airport": {
+              "id": "AUS",
+              "name": "Austin-Bergstrom International Airport"
+            },
+            "city": "Austin",
+            "country": "United States",
+            "country_code": "US",
+            "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKdjkMcBZuGRD1MjnuLQvdGtpTk0RyjdYs0Z8JsPtfIjer-6VvmfmMLxzvBkeyUrhf_focikfda4rVHg",
+            "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQ73FSj9E8pKaNvjWKyEDQGfLV-pky_onARvOY-zHWvQ-hOuPJSqyyXzvyg4-kGGAcZxdO6T5SYGWBzrX8x6MSPq7gBHsSLzX9MYjFJWA"
+          }
+        ],
+        "arrival": [
+          {
+            "airport": {
+              "id": "LAX",
+              "name": "Los Angeles International Airport"
+            },
+            "city": "Los Angeles",
+            "country": "United States",
+            "country_code": "US",
+            "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFuS2Y5_b7ZIl-g2Hm7jnG7zoi2uk0CQltF_DFbp6gIzfYznnOB6uJm9d6ePT5PJO5XM1j8vigwCNxRA",
+            "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4B0K7etaN3KgEgtU5dJajdcmLtB5QSDRYr4KqcwH1iWxMm7TIqwtcUTTHD5AmNyeeFIpVpTnbSDeuD_HVlkYzOam-TO9w1worRSGRTUo"
+          }
+        ]
+      },
+      {
+        "departure": [
+          {
+            "airport": {
+              "id": "LAX",
+              "name": "Los Angeles International Airport"
+            },
+            "city": "Los Angeles",
+            "country": "United States",
+            "country_code": "US",
+            "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFuS2Y5_b7ZIl-g2Hm7jnG7zoi2uk0CQltF_DFbp6gIzfYznnOB6uJm9d6ePT5PJO5XM1j8vigwCNxRA",
+            "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4B0K7etaN3KgEgtU5dJajdcmLtB5QSDRYr4KqcwH1iWxMm7TIqwtcUTTHD5AmNyeeFIpVpTnbSDeuD_HVlkYzOam-TO9w1worRSGRTUo"
+          }
+        ],
+        "arrival": [
+          {
+            "airport": {
+              "id": "AUS",
+              "name": "Austin-Bergstrom International Airport"
+            },
+            "city": "Austin",
+            "country": "United States",
+            "country_code": "US",
+            "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKdjkMcBZuGRD1MjnuLQvdGtpTk0RyjdYs0Z8JsPtfIjer-6VvmfmMLxzvBkeyUrhf_focikfda4rVHg",
+            "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQ73FSj9E8pKaNvjWKyEDQGfLV-pky_onARvOY-zHWvQ-hOuPJSqyyXzvyg4-kGGAcZxdO6T5SYGWBzrX8x6MSPq7gBHsSLzX9MYjFJWA"
+          }
+        ]
+      }
+    ]
+  }
+}

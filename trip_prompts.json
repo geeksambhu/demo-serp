@@ -1,0 +1,35 @@
+[
+  {
+    "id": "dfw_sfo_under_1000",
+    "phrase": "Plan me a trip under $1000 from DFW to SFO",
+    "origin": "DFW",
+    "destination": "SFO",
+    "destination_name": "San Francisco",
+    "hotel_query": "San Francisco hotels",
+    "departure_offset_days": 21,
+    "trip_length_days": 3,
+    "budget": 1000
+  },
+  {
+    "id": "dfw_den_under_1000",
+    "phrase": "Plan me a trip under $1000 from DFW to Denver",
+    "origin": "DFW",
+    "destination": "DEN",
+    "destination_name": "Denver",
+    "hotel_query": "Denver hotels",
+    "departure_offset_days": 28,
+    "trip_length_days": 3,
+    "budget": 1000
+  },
+  {
+    "id": "dfw_hawaii_under_1000",
+    "phrase": "Plan me a trip under $1000 from DFW to Hawaii",
+    "origin": "DFW",
+    "destination": "HNL",
+    "destination_name": "Honolulu",
+    "hotel_query": "Honolulu hotels",
+    "departure_offset_days": 35,
+    "trip_length_days": 4,
+    "budget": 1000
+  }
+]

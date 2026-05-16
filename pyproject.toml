@@ -1,0 +1,19 @@
+[project]
+name = "jetpot"
+version = "0.1.0"
+description = "A Streamlit travel planner for curated flight, hotel, and sightseeing trip options powered by SerpApi."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas",
+  "python-dotenv",
+  "serpapi==1.0.2",
+  "streamlit",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = false

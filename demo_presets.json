@@ -1,0 +1,56 @@
+[
+  {
+    "phrase": "Where can I fly cheaply this weekend from Austin?",
+    "trip_mode": "Explore cheap destinations",
+    "origin": "AUS",
+    "destination": "",
+    "departure_offset_days": 14,
+    "trip_length_days": 3,
+    "budget": 250
+  },
+  {
+    "phrase": "Show me a 3-day Los Angeles trip from Austin under $350",
+    "trip_mode": "Specific destination",
+    "origin": "AUS",
+    "destination": "LAX",
+    "departure_offset_days": 21,
+    "trip_length_days": 3,
+    "budget": 350
+  },
+  {
+    "phrase": "What are good 3-day trips from Dallas under $300?",
+    "trip_mode": "Explore cheap destinations",
+    "origin": "DFW",
+    "destination": "",
+    "departure_offset_days": 18,
+    "trip_length_days": 3,
+    "budget": 300
+  },
+  {
+    "phrase": "Find a cheap New York weekend from Los Angeles under $400",
+    "trip_mode": "Specific destination",
+    "origin": "LAX",
+    "destination": "JFK",
+    "departure_offset_days": 28,
+    "trip_length_days": 3,
+    "budget": 400
+  },
+  {
+    "phrase": "Give me a quick getaway from Long Beach under $200",
+    "trip_mode": "Explore cheap destinations",
+    "origin": "LGB",
+    "destination": "",
+    "departure_offset_days": 16,
+    "trip_length_days": 2,
+    "budget": 200
+  },
+  {
+    "phrase": "Which San Francisco flight from JFK is the best value for a long weekend?",
+    "trip_mode": "Specific destination",
+    "origin": "JFK",
+    "destination": "SFO",
+    "departure_offset_days": 35,
+    "trip_length_days": 4,
+    "budget": 500
+  }
+]
